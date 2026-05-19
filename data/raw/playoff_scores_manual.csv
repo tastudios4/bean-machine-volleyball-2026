@@ -1,0 +1,3 @@
+match_id,date,week_number,bracket,round,court,time_slot,team_a_number,team_b_number,set1_a,set1_b,set2_a,set2_b,set3_a,set3_b,winner_team_number,is_tie,notes
+2026-03-04_C1_M2,2026-03-04,8,Silver,M2,1,21:00,11,15,25,19,,,,,11,False,"Bean won 2-0 vs Block You-Ah. G2 score not recorded. G3 was played (player_stats has 26-0304G3) but result irrelevant; score not recorded."
+2026-03-11_C3_M6,2026-03-11,9,Silver,Final,3,21:00,11,2,,,,,,,11,False,"Bean won the Silver bracket championship 2-0 vs Sets Up. G1 and G2 scores not recorded. G3 was played (player_stats has 26-0311G3) but result irrelevant; score not recorded."

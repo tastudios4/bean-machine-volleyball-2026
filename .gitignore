@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.DS_Store
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# Per-tab CSV dumps are intermediate; processed CSVs ARE committed.
+data/raw/sheets/
+
+# Claude Code local settings
+.claude/
