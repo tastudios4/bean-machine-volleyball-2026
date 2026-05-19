@@ -30,5 +30,16 @@ Runs the full pipeline: `01_extract_xlsx → 02_parse_league → 03_build_bean_m
 
 ### Source data
 
+The `.xlsx` files in `data/raw/` are exports of two original Google Sheets that
+were maintained throughout the season:
+
 - `data/raw/league_raw.xlsx` — league schedule and scores for all 15 teams
+  ([original Google Sheet](https://docs.google.com/spreadsheets/d/1fUR2kJy3ZEeiIz9mfyUbWO2I-rPgxGcQ44nToddjqaE/edit?usp=sharing))
 - `data/raw/player_stats_raw.xlsx` — Bean Machine per-player per-set stats
+  ([original Google Sheet](https://docs.google.com/spreadsheets/d/1Mk5XCqo7_MVq0_m-4yvjRVieMh7UwWcEXsp1RCRQ-Oc/edit?usp=sharing))
+
+### Game footage
+
+Video of the games was recorded throughout the season and is available on YouTube:
+[@cadetanaka7543](https://www.youtube.com/@cadetanaka7543). Player stats were
+logged by reviewing this footage.
