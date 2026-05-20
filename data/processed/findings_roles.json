@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "scope": "regular season + playoffs; games played only (position != '-')"
+  },
+  "player_totals": [
+    {
+      "player_name": "Allen",
+      "sets_played": 26,
+      "attack_attempts": 113.0,
+      "kills": 25.0,
+      "errors": 32.0,
+      "assists": 1.0,
+      "blocks_solo": 0.0,
+      "blocks_assist": 7.0,
+      "digs": 41.0,
+      "aces": 6.0,
+      "service_errors": 13.0,
+      "total_serves": 90.0,
+      "sr_attempts": 63.0,
+      "hit_pct": -0.061946902654867256,
+      "kills_per_set": 0.9615384615384616,
+      "digs_per_set": 1.5769230769230769,
+      "assists_per_set": 0.038461538461538464,
+      "ace_pct": 0.06666666666666667,
+      "kills_share": 0.11574074074074074,
+      "assists_share": 0.005376344086021506,
+      "digs_share": 0.125,
+      "aces_share": 0.15,
+      "attack_attempts_share": 0.16715976331360946
+    },
+    {
+      "player_name": "Andy",
+      "sets_played": 26,
+      "attack_attempts": 153.0,
+      "kills": 57.0,
+      "errors": 26.0,
+      "assists": 3.0,
+      "blocks_solo": 1.0,
+      "blocks_assist": 5.0,
+      "digs": 47.0,
+      "aces": 6.0,
+      "service_errors": 8.0,
+      "total_serves": 59.0,
+      "sr_attempts": 106.0,
+      "hit_pct": 0.20261437908496732,
+      "kills_per_set": 2.1923076923076925,
+      "digs_per_set": 1.8076923076923077,
+      "assists_per_set": 0.11538461538461539,
+      "ace_pct": 0.1016949152542373,
+      "kills_share": 0.2638888888888889,
+      "assists_share": 0.016129032258064516,
+      "digs_share": 0.14329268292682926,
+      "aces_share": 0.15,
+      "attack_attempts_share": 0.22633136094674555
+    },
+    {
+      "player_name": "Cade",
+      "sets_played": 26,
+      "attack_attempts": 73.0,
+      "kills": 25.0,
+      "errors": 12.0,
+      "assists": 34.0,
+      "blocks_solo": 2.0,
+      "blocks_assist": 19.0,
+      "digs": 59.0,
+      "aces": 5.0,
+      "service_errors": 4.0,
+      "total_serves": 63.0,
+      "sr_attempts": 54.0,
+      "hit_pct": 0.1780821917808219,
+      "kills_per_set": 0.9615384615384616,
+      "digs_per_set": 2.269230769230769,
+      "assists_per_set": 1.3076923076923077,
+      "ace_pct": 0.07936507936507936,
+      "kills_share": 0.11574074074074074,
+      "assists_share": 0.1827956989247312,
+      "digs_share": 0.1798780487804878,
+      "aces_share": 0.125,
+      "attack_attempts_share": 0.10798816568047337
+    },
+    {
+      "player_name": "Cole",
+      "sets_played": 26,
+      "attack_attempts": 92.0,
+      "kills": 32.0,
+      "errors": 15.0,
+      "assists": 6.0,
+      "blocks_solo": 0.0,
+      "blocks_assist": 1.0,
+      "digs": 61.0,
+      "aces": 5.0,
+      "service_errors": 5.0,
+      "total_serves": 66.0,
+      "sr_attempts": 90.0,
+      "hit_pct": 0.18478260869565216,
+      "kills_per_set": 1.2307692307692308,
+      "digs_per_set": 2.3461538461538463,
+      "assists_per_set": 0.23076923076923078,
+      "ace_pct": 0.07575757575757576,
+      "kills_share": 0.14814814814814814,
+      "assists_share": 0.03225806451612903,
+      "digs_share": 0.18597560975609756,
+      "aces_share": 0.125,
+      "attack_attempts_share": 0.13609467455621302
+    },
+    {
+      "player_name": "Jeremy",
+      "sets_played": 26,
+      "attack_attempts": 153.0,
+      "kills": 58.0,
+      "errors": 24.0,
+      "assists": 1.0,
+      "blocks_solo": 0.0,
+      "blocks_assist": 1.0,
+      "digs": 52.0,
+      "aces": 4.0,
+      "service_errors": 14.0,
+      "total_serves": 72.0,
+      "sr_attempts": 64.0,
+      "hit_pct": 0.2222222222222222,
+      "kills_per_set": 2.230769230769231,
+      "digs_per_set": 2.0,
+      "assists_per_set": 0.038461538461538464,
+      "ace_pct": 0.05555555555555555,
+      "kills_share": 0.26851851851851855,
+      "assists_share": 0.005376344086021506,
+      "digs_share": 0.15853658536585366,
+      "aces_share": 0.1,
+      "attack_attempts_share": 0.22633136094674555
+    },
+    {
+      "player_name": "Tae",
+      "sets_played": 20,
+      "attack_attempts": 67.0,
+      "kills": 13.0,
+      "errors": 10.0,
+      "assists": 3.0,
+      "blocks_solo": 0.0,
+      "blocks_assist": 1.0,
+      "digs": 25.0,
+      "aces": 2.0,
+      "service_errors": 9.0,
+      "total_serves": 38.0,
+      "sr_attempts": 30.0,
+      "hit_pct": 0.04477611940298507,
+      "kills_per_set": 0.65,
+      "digs_per_set": 1.25,
+      "assists_per_set": 0.15,
+      "ace_pct": 0.05263157894736842,
+      "kills_share": 0.06018518518518518,
+      "assists_share": 0.016129032258064516,
+      "digs_share": 0.07621951219512195,
+      "aces_share": 0.05,
+      "attack_attempts_share": 0.09911242603550297
+    },
+    {
+      "player_name": "Zane",
+      "sets_played": 26,
+      "attack_attempts": 25.0,
+      "kills": 6.0,
+      "errors": 1.0,
+      "assists": 138.0,
+      "blocks_solo": 2.0,
+      "blocks_assist": 15.0,
+      "digs": 43.0,
+      "aces": 12.0,
+      "service_errors": 4.0,
+      "total_serves": 102.0,
+      "sr_attempts": 13.0,
+      "hit_pct": 0.2,
+      "kills_per_set": 0.23076923076923078,
+      "digs_per_set": 1.6538461538461537,
+      "assists_per_set": 5.3076923076923075,
+      "ace_pct": 0.11764705882352941,
+      "kills_share": 0.027777777777777776,
+      "assists_share": 0.7419354838709677,
+      "digs_share": 0.13109756097560976,
+      "aces_share": 0.3,
+      "attack_attempts_share": 0.03698224852071006
+    }
+  ],
+  "roles": {
+    "Allen": {
+      "tags": [
+        "secondary hitter"
+      ],
+      "kills_share": 0.11574074074074074,
+      "assists_share": 0.005376344086021506,
+      "digs_share": 0.125,
+      "aces_share": 0.15
+    },
+    "Andy": {
+      "tags": [
+        "primary hitter"
+      ],
+      "kills_share": 0.2638888888888889,
+      "assists_share": 0.016129032258064516,
+      "digs_share": 0.14329268292682926,
+      "aces_share": 0.15
+    },
+    "Cade": {
+      "tags": [
+        "secondary setter",
+        "secondary hitter",
+        "defensive anchor"
+      ],
+      "kills_share": 0.11574074074074074,
+      "assists_share": 0.1827956989247312,
+      "digs_share": 0.1798780487804878,
+      "aces_share": 0.125
+    },
+    "Cole": {
+      "tags": [
+        "secondary hitter",
+        "defensive anchor"
+      ],
+      "kills_share": 0.14814814814814814,
+      "assists_share": 0.03225806451612903,
+      "digs_share": 0.18597560975609756,
+      "aces_share": 0.125
+    },
+    "Jeremy": {
+      "tags": [
+        "primary hitter"
+      ],
+      "kills_share": 0.26851851851851855,
+      "assists_share": 0.005376344086021506,
+      "digs_share": 0.15853658536585366,
+      "aces_share": 0.1
+    },
+    "Tae": {
+      "tags": [
+        "everyday starter"
+      ],
+      "kills_share": 0.06018518518518518,
+      "assists_share": 0.016129032258064516,
+      "digs_share": 0.07621951219512195,
+      "aces_share": 0.05
+    },
+    "Zane": {
+      "tags": [
+        "primary setter",
+        "service leader"
+      ],
+      "kills_share": 0.027777777777777776,
+      "assists_share": 0.7419354838709677,
+      "digs_share": 0.13109756097560976,
+      "aces_share": 0.3
+    }
+  },
+  "leaders": {
+    "setter": "Zane",
+    "top_hitter": "Jeremy",
+    "dig_leader": "Cole",
+    "ace_leader": "Zane"
+  }
+}

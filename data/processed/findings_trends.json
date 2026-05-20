@@ -1,0 +1,450 @@
+{
+  "meta": {
+    "weeks": "regular season weeks 1-7; playoffs = weeks 8-9",
+    "bye_week": "2026-02-04",
+    "n_regular_season_weeks": 7
+  },
+  "weekly_team_stats": [
+    {
+      "week": 1,
+      "is_playoff": false,
+      "sets": 3,
+      "kills_per_set": 6.333333333333333,
+      "errors_per_set": 5.333333333333333,
+      "attack_attempts_per_set": 22.0,
+      "digs_per_set": 9.0,
+      "aces_per_set": 1.5,
+      "assists_per_set": 6.333333333333333,
+      "kills_sum": 19.0,
+      "errors_sum": 16.0,
+      "attempts_sum": 66.0,
+      "margin_avg": 1.6666666666666667,
+      "team_hit_pct": 0.045454545454545456
+    },
+    {
+      "week": 2,
+      "is_playoff": false,
+      "sets": 3,
+      "kills_per_set": 8.666666666666666,
+      "errors_per_set": 5.0,
+      "attack_attempts_per_set": 27.666666666666668,
+      "digs_per_set": 10.666666666666666,
+      "aces_per_set": 1.6666666666666667,
+      "assists_per_set": 7.333333333333333,
+      "kills_sum": 26.0,
+      "errors_sum": 15.0,
+      "attempts_sum": 83.0,
+      "margin_avg": 1.3333333333333333,
+      "team_hit_pct": 0.13253012048192772
+    },
+    {
+      "week": 3,
+      "is_playoff": false,
+      "sets": 3,
+      "kills_per_set": 9.0,
+      "errors_per_set": 4.0,
+      "attack_attempts_per_set": 30.666666666666668,
+      "digs_per_set": 16.333333333333332,
+      "aces_per_set": 1.5,
+      "assists_per_set": 7.0,
+      "kills_sum": 27.0,
+      "errors_sum": 12.0,
+      "attempts_sum": 92.0,
+      "margin_avg": -8.0,
+      "team_hit_pct": 0.16304347826086957
+    },
+    {
+      "week": 4,
+      "is_playoff": false,
+      "sets": 3,
+      "kills_per_set": 7.666666666666667,
+      "errors_per_set": 4.0,
+      "attack_attempts_per_set": 20.666666666666668,
+      "digs_per_set": 7.666666666666667,
+      "aces_per_set": 1.3333333333333333,
+      "assists_per_set": 7.0,
+      "kills_sum": 23.0,
+      "errors_sum": 12.0,
+      "attempts_sum": 62.0,
+      "margin_avg": 2.3333333333333335,
+      "team_hit_pct": 0.1774193548387097
+    },
+    {
+      "week": 5,
+      "is_playoff": false,
+      "sets": 3,
+      "kills_per_set": 8.666666666666666,
+      "errors_per_set": 5.0,
+      "attack_attempts_per_set": 27.0,
+      "digs_per_set": 10.666666666666666,
+      "aces_per_set": 1.6666666666666667,
+      "assists_per_set": 6.666666666666667,
+      "kills_sum": 26.0,
+      "errors_sum": 15.0,
+      "attempts_sum": 81.0,
+      "margin_avg": 0.3333333333333333,
+      "team_hit_pct": 0.13580246913580246
+    },
+    {
+      "week": 6,
+      "is_playoff": false,
+      "sets": 2,
+      "kills_per_set": 8.0,
+      "errors_per_set": 4.5,
+      "attack_attempts_per_set": 32.5,
+      "digs_per_set": 12.5,
+      "aces_per_set": NaN,
+      "assists_per_set": 6.0,
+      "kills_sum": 16.0,
+      "errors_sum": 9.0,
+      "attempts_sum": 65.0,
+      "margin_avg": -4.0,
+      "team_hit_pct": 0.1076923076923077
+    },
+    {
+      "week": 7,
+      "is_playoff": false,
+      "sets": 3,
+      "kills_per_set": 8.666666666666666,
+      "errors_per_set": 5.0,
+      "attack_attempts_per_set": 29.0,
+      "digs_per_set": 16.666666666666668,
+      "aces_per_set": 2.5,
+      "assists_per_set": 7.0,
+      "kills_sum": 26.0,
+      "errors_sum": 15.0,
+      "attempts_sum": 87.0,
+      "margin_avg": 1.0,
+      "team_hit_pct": 0.12643678160919541
+    },
+    {
+      "week": 8,
+      "is_playoff": true,
+      "sets": 3,
+      "kills_per_set": 8.333333333333334,
+      "errors_per_set": 5.333333333333333,
+      "attack_attempts_per_set": 27.666666666666668,
+      "digs_per_set": 19.0,
+      "aces_per_set": 3.6666666666666665,
+      "assists_per_set": 7.666666666666667,
+      "kills_sum": 25.0,
+      "errors_sum": 16.0,
+      "attempts_sum": 83.0,
+      "margin_avg": 6.0,
+      "team_hit_pct": 0.10843373493975904
+    },
+    {
+      "week": 9,
+      "is_playoff": true,
+      "sets": 3,
+      "kills_per_set": 9.333333333333334,
+      "errors_per_set": 3.3333333333333335,
+      "attack_attempts_per_set": 19.0,
+      "digs_per_set": 11.0,
+      "aces_per_set": 1.3333333333333333,
+      "assists_per_set": 9.0,
+      "kills_sum": 28.0,
+      "errors_sum": 10.0,
+      "attempts_sum": 57.0,
+      "margin_avg": NaN,
+      "team_hit_pct": 0.3157894736842105
+    }
+  ],
+  "trends": {
+    "team_hit_pct": {
+      "stat": "team_hit_pct",
+      "slope": 0.005929645491415812,
+      "intercept": 0.10319271195910217,
+      "r_value": 0.29954664317105234,
+      "p_value": 0.5139779558955058,
+      "n": 7,
+      "values_by_week": {
+        "1": 0.045454545454545456,
+        "2": 0.13253012048192772,
+        "3": 0.16304347826086957,
+        "4": 0.1774193548387097,
+        "5": 0.13580246913580246,
+        "6": 0.1076923076923077,
+        "7": 0.12643678160919541
+      },
+      "direction": "up",
+      "noteworthy": false
+    },
+    "kills_per_set": {
+      "stat": "kills_per_set",
+      "slope": 0.19047619047619047,
+      "intercept": 7.3809523809523805,
+      "r_value": 0.447213595499958,
+      "p_value": 0.3143726376470169,
+      "n": 7,
+      "values_by_week": {
+        "1": 6.333333333333333,
+        "2": 8.666666666666666,
+        "3": 9.0,
+        "4": 7.666666666666667,
+        "5": 8.666666666666666,
+        "6": 8.0,
+        "7": 8.666666666666666
+      },
+      "direction": "up",
+      "noteworthy": false
+    },
+    "errors_per_set": {
+      "stat": "errors_per_set",
+      "slope": -0.03571428571428568,
+      "intercept": 4.833333333333332,
+      "r_value": -0.14535047493345263,
+      "p_value": 0.7558436518124423,
+      "n": 7,
+      "values_by_week": {
+        "1": 5.333333333333333,
+        "2": 5.0,
+        "3": 4.0,
+        "4": 4.0,
+        "5": 5.0,
+        "6": 4.5,
+        "7": 5.0
+      },
+      "direction": "down",
+      "noteworthy": false
+    },
+    "digs_per_set": {
+      "stat": "digs_per_set",
+      "slope": 0.7500000000000002,
+      "intercept": 8.928571428571427,
+      "r_value": 0.4673724254164187,
+      "p_value": 0.2903034128620975,
+      "n": 7,
+      "values_by_week": {
+        "1": 9.0,
+        "2": 10.666666666666666,
+        "3": 16.333333333333332,
+        "4": 7.666666666666667,
+        "5": 10.666666666666666,
+        "6": 12.5,
+        "7": 16.666666666666668
+      },
+      "direction": "up",
+      "noteworthy": false
+    },
+    "aces_per_set": {
+      "stat": "aces_per_set",
+      "slope": 0.13809523809523808,
+      "intercept": 1.1880952380952383,
+      "r_value": 0.7207889285613919,
+      "p_value": 0.10605475045370524,
+      "n": 6,
+      "values_by_week": {
+        "1": 1.5,
+        "2": 1.6666666666666667,
+        "3": 1.5,
+        "4": 1.3333333333333333,
+        "5": 1.6666666666666667,
+        "7": 2.5
+      },
+      "direction": "up",
+      "noteworthy": false
+    },
+    "margin_avg": {
+      "stat": "margin_avg",
+      "slope": -0.1547619047619047,
+      "intercept": -0.14285714285714302,
+      "r_value": -0.08777374601037817,
+      "p_value": 0.851563997988528,
+      "n": 7,
+      "values_by_week": {
+        "1": 1.6666666666666667,
+        "2": 1.3333333333333333,
+        "3": -8.0,
+        "4": 2.3333333333333335,
+        "5": 0.3333333333333333,
+        "6": -4.0,
+        "7": 1.0
+      },
+      "direction": "down",
+      "noteworthy": false
+    }
+  },
+  "playoff_vs_trend": {
+    "team_hit_pct": {
+      "projected_playoff_avg": 0.15359469863613656,
+      "actual_playoff_avg": 0.21211160431198478
+    },
+    "kills_per_set": {
+      "projected_playoff_avg": 9.0,
+      "actual_playoff_avg": 8.833333333333334
+    },
+    "errors_per_set": {
+      "projected_playoff_avg": 4.529761904761904,
+      "actual_playoff_avg": 4.333333333333333
+    },
+    "digs_per_set": {
+      "projected_playoff_avg": 15.303571428571427,
+      "actual_playoff_avg": 15.0
+    },
+    "aces_per_set": {
+      "projected_playoff_avg": 2.361904761904762,
+      "actual_playoff_avg": 2.5
+    },
+    "margin_avg": {
+      "projected_playoff_avg": -1.458333333333333,
+      "actual_playoff_avg": 6.0
+    }
+  },
+  "per_player_trends": {
+    "Allen": {
+      "weekly_hit_pct": {
+        "1": -0.375,
+        "2": 0.0,
+        "3": -0.037037037037037035,
+        "4": -0.125,
+        "5": -0.1111111111111111,
+        "6": -0.16666666666666666,
+        "7": 0.0
+      },
+      "weekly_kills_per_set": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 2.0,
+        "4": 3.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 1.5
+      },
+      "hit_pct_slope_per_week": 0.025628306878306875,
+      "hit_pct_slope_p_value": 0.3446788165046046
+    },
+    "Andy": {
+      "weekly_hit_pct": {
+        "1": 0.13636363636363635,
+        "2": 0.45454545454545453,
+        "3": 0.1875,
+        "4": 0.16666666666666666,
+        "5": 0.13333333333333333,
+        "6": 0.17647058823529413,
+        "7": 0.17647058823529413
+      },
+      "weekly_kills_per_set": {
+        "1": 2.6666666666666665,
+        "2": 1.6666666666666667,
+        "3": 2.5,
+        "4": 2.5,
+        "5": 2.5,
+        "6": 3.5,
+        "7": 2.3333333333333335
+      },
+      "hit_pct_slope_per_week": -0.017499840845429073,
+      "hit_pct_slope_p_value": 0.4598744983114237
+    },
+    "Cade": {
+      "weekly_hit_pct": {
+        "1": 0.2222222222222222,
+        "2": 0.1111111111111111,
+        "3": 0.0,
+        "4": 0.0,
+        "5": -0.1111111111111111,
+        "6": 0.25,
+        "7": 2.0
+      },
+      "weekly_kills_per_set": {
+        "1": 0.6666666666666666,
+        "2": 1.5,
+        "3": null,
+        "4": 3.0,
+        "5": 1.0,
+        "6": 1.5,
+        "7": 1.0
+      },
+      "hit_pct_slope_per_week": 0.19642857142857142,
+      "hit_pct_slope_p_value": 0.17652477789161192
+    },
+    "Cole": {
+      "weekly_hit_pct": {
+        "1": null,
+        "2": 0.2,
+        "3": 0.4117647058823529,
+        "4": null,
+        "5": 0.0,
+        "6": 0.15384615384615385,
+        "7": 0.3333333333333333
+      },
+      "weekly_kills_per_set": {
+        "1": 0.0,
+        "2": 2.6666666666666665,
+        "3": 3.0,
+        "4": null,
+        "5": 1.5,
+        "6": 1.0,
+        "7": 2.5
+      },
+      "hit_pct_slope_per_week": -0.009502262443438917,
+      "hit_pct_slope_p_value": 0.8438940367709076
+    },
+    "Jeremy": {
+      "weekly_hit_pct": {
+        "1": 0.07692307692307693,
+        "2": 0.07692307692307693,
+        "3": 0.19047619047619047,
+        "4": 0.5294117647058824,
+        "5": 0.38095238095238093,
+        "6": 0.16666666666666666,
+        "7": 0.2
+      },
+      "weekly_kills_per_set": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 2.0,
+        "4": 3.6666666666666665,
+        "5": 5.0,
+        "6": 2.0,
+        "7": 2.5
+      },
+      "hit_pct_slope_per_week": 0.02639979068550497,
+      "hit_pct_slope_p_value": 0.45117453471212776
+    },
+    "Tae": {
+      "weekly_hit_pct": {
+        "1": 0.4,
+        "2": -0.1,
+        "3": 0.2857142857142857,
+        "4": -0.25,
+        "5": 0.15384615384615385,
+        "6": -0.125,
+        "7": 0.0
+      },
+      "weekly_kills_per_set": {
+        "1": 0.6666666666666666,
+        "2": 1.0,
+        "3": 1.5,
+        "4": null,
+        "5": 1.5,
+        "6": 1.0,
+        "7": 3.0
+      },
+      "hit_pct_slope_per_week": -0.049352433281004714,
+      "hit_pct_slope_p_value": 0.30909582097476934
+    },
+    "Zane": {
+      "weekly_hit_pct": {
+        "1": 1.0,
+        "2": 0.25,
+        "3": null,
+        "4": 0.2,
+        "5": 0.3333333333333333,
+        "6": 0.0,
+        "7": 0.0
+      },
+      "weekly_kills_per_set": {
+        "1": 0.3333333333333333,
+        "2": 1.0,
+        "3": null,
+        "4": 1.0,
+        "5": 1.0,
+        "6": null,
+        "7": 1.0
+      },
+      "hit_pct_slope_per_week": -0.12908902691511384,
+      "hit_pct_slope_p_value": 0.051345474049635347
+    }
+  }
+}

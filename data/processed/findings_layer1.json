@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "total_sets": 27,
+    "regular_season_sets": 21,
+    "playoff_sets": 6,
+    "with_score_and_stats_regular": 19,
+    "with_score_and_stats_playoff": 1,
+    "excluded": [
+      {
+        "match_id": "2026-01-21_C3_M1",
+        "game_number": 3,
+        "is_playoff": false,
+        "reason": "missing score"
+      },
+      {
+        "match_id": "2026-02-18_C1_M2",
+        "game_number": 3,
+        "is_playoff": false,
+        "reason": "missing stats"
+      },
+      {
+        "match_id": "2026-03-04_C1_M2",
+        "game_number": 2,
+        "is_playoff": true,
+        "reason": "missing score"
+      },
+      {
+        "match_id": "2026-03-04_C1_M2",
+        "game_number": 3,
+        "is_playoff": true,
+        "reason": "missing score"
+      },
+      {
+        "match_id": "2026-03-11_C3_M6",
+        "game_number": 1,
+        "is_playoff": true,
+        "reason": "missing score"
+      },
+      {
+        "match_id": "2026-03-11_C3_M6",
+        "game_number": 2,
+        "is_playoff": true,
+        "reason": "missing score"
+      },
+      {
+        "match_id": "2026-03-11_C3_M6",
+        "game_number": 3,
+        "is_playoff": true,
+        "reason": "missing score"
+      }
+    ],
+    "analysis_n": 19,
+    "bean_wins": 9,
+    "bean_losses": 10,
+    "critical_r_for_p05": 0.482,
+    "scope": "regular season only; playoffs excluded due to format differences and only 1 usable set with both score and stats"
+  },
+  "stat_correlations": [
+    {
+      "stat": "sr_3",
+      "r": -0.5975211794252555,
+      "p_value": 0.006900021052682798,
+      "n": 19,
+      "noteworthy": true
+    },
+    {
+      "stat": "sr_attempts",
+      "r": -0.5734510910671928,
+      "p_value": 0.010260501791687249,
+      "n": 19,
+      "noteworthy": true
+    },
+    {
+      "stat": "team_hit_pct",
+      "r": 0.5028698704016634,
+      "p_value": 0.028197888114276152,
+      "n": 19,
+      "noteworthy": true
+    },
+    {
+      "stat": "errors",
+      "r": -0.49046093062902885,
+      "p_value": 0.03300692499674176,
+      "n": 19,
+      "noteworthy": true
+    },
+    {
+      "stat": "team_ace_pct",
+      "r": 0.37262621486450886,
+      "p_value": 0.1894814587573632,
+      "n": 14,
+      "noteworthy": false
+    },
+    {
+      "stat": "attack_attempts",
+      "r": -0.31683093492226505,
+      "p_value": 0.18629017493531122,
+      "n": 19,
+      "noteworthy": false
+    },
+    {
+      "stat": "blocks_assist",
+      "r": -0.2986167686555679,
+      "p_value": 0.37240187160880606,
+      "n": 11,
+      "noteworthy": false
+    },
+    {
+      "stat": "sr_2",
+      "r": -0.2549011951508665,
+      "p_value": 0.30734678356371853,
+      "n": 18,
+      "noteworthy": false
+    },
+    {
+      "stat": "aces",
+      "r": 0.23331413131434567,
+      "p_value": 0.4221121564852908,
+      "n": 14,
+      "noteworthy": false
+    },
+    {
+      "stat": "team_sr_average",
+      "r": -0.22644185086102864,
+      "p_value": 0.39904437696157635,
+      "n": 16,
+      "noteworthy": false
+    },
+    {
+      "stat": "sr_0",
+      "r": -0.19115411478777614,
+      "p_value": 0.4623794602262885,
+      "n": 17,
+      "noteworthy": false
+    },
+    {
+      "stat": "digs",
+      "r": -0.18156133222629295,
+      "p_value": 0.45693923576028983,
+      "n": 19,
+      "noteworthy": false
+    },
+    {
+      "stat": "team_srv_pct",
+      "r": -0.17419140819306358,
+      "p_value": 0.4893835442187639,
+      "n": 18,
+      "noteworthy": false
+    },
+    {
+      "stat": "sr_1",
+      "r": -0.12488317621309475,
+      "p_value": 0.6329611392867184,
+      "n": 17,
+      "noteworthy": false
+    },
+    {
+      "stat": "assists",
+      "r": -0.08186537751255638,
+      "p_value": 0.7390006354846572,
+      "n": 19,
+      "noteworthy": false
+    },
+    {
+      "stat": "total_serves",
+      "r": -0.02785093960907395,
+      "p_value": 0.9098886206798587,
+      "n": 19,
+      "noteworthy": false
+    },
+    {
+      "stat": "kills",
+      "r": -0.010570328451633804,
+      "p_value": 0.9657430505194969,
+      "n": 19,
+      "noteworthy": false
+    },
+    {
+      "stat": "service_errors",
+      "r": 1.0408340855860843e-17,
+      "p_value": 1.0000000000000002,
+      "n": 18,
+      "noteworthy": false
+    }
+  ],
+  "offense_vs_defense": {
+    "team_hit_pct_in_wins": 0.19671055086476014,
+    "team_hit_pct_in_losses": 0.04893557383476739,
+    "team_hit_pct_gap": 0.14777497702999276,
+    "team_hit_pct_cohens_d": 0.98027384180115,
+    "opp_points_in_wins": 15.11111111111111,
+    "opp_points_in_losses": 23.2,
+    "opp_points_gap": 8.088888888888889,
+    "opp_points_cohens_d": -1.151372100837355,
+    "n_wins": 9,
+    "n_losses": 10,
+    "decisive": "defense (points allowed)"
+  },
+  "thresholds": [],
+  "player_splits": {
+    "Allen": {
+      "sets_in_wins": 9,
+      "sets_in_losses": 10,
+      "kills_per_set_in_wins": 2.0,
+      "kills_per_set_in_losses": 1.1428571428571428,
+      "errors_per_set_in_wins": 1.5714285714285714,
+      "errors_per_set_in_losses": 2.25,
+      "digs_per_set_in_wins": 1.8333333333333333,
+      "digs_per_set_in_losses": 1.7777777777777777,
+      "aces_per_set_in_wins": NaN,
+      "aces_per_set_in_losses": 1.0
+    },
+    "Andy": {
+      "sets_in_wins": 9,
+      "sets_in_losses": 10,
+      "kills_per_set_in_wins": 2.4285714285714284,
+      "kills_per_set_in_losses": 2.5,
+      "errors_per_set_in_wins": 2.0,
+      "errors_per_set_in_losses": 1.75,
+      "digs_per_set_in_wins": 1.75,
+      "digs_per_set_in_losses": 2.75,
+      "aces_per_set_in_wins": 1.0,
+      "aces_per_set_in_losses": 1.0
+    },
+    "Cade": {
+      "sets_in_wins": 9,
+      "sets_in_losses": 10,
+      "kills_per_set_in_wins": 1.3333333333333333,
+      "kills_per_set_in_losses": 1.1666666666666667,
+      "errors_per_set_in_wins": 0.75,
+      "errors_per_set_in_losses": 1.0,
+      "digs_per_set_in_wins": 2.2857142857142856,
+      "digs_per_set_in_losses": 3.375,
+      "aces_per_set_in_wins": 1.0,
+      "aces_per_set_in_losses": 1.0
+    },
+    "Cole": {
+      "sets_in_wins": 9,
+      "sets_in_losses": 10,
+      "kills_per_set_in_wins": 1.8333333333333333,
+      "kills_per_set_in_losses": 1.75,
+      "errors_per_set_in_wins": 0.8,
+      "errors_per_set_in_losses": 1.1666666666666667,
+      "digs_per_set_in_wins": 1.7777777777777777,
+      "digs_per_set_in_losses": 2.875,
+      "aces_per_set_in_wins": 1.0,
+      "aces_per_set_in_losses": NaN
+    },
+    "Jeremy": {
+      "sets_in_wins": 9,
+      "sets_in_losses": 10,
+      "kills_per_set_in_wins": 2.8333333333333335,
+      "kills_per_set_in_losses": 2.5555555555555554,
+      "errors_per_set_in_wins": 1.0,
+      "errors_per_set_in_losses": 1.1428571428571428,
+      "digs_per_set_in_wins": 2.5,
+      "digs_per_set_in_losses": 1.7142857142857142,
+      "aces_per_set_in_wins": 2.0,
+      "aces_per_set_in_losses": 1.0
+    },
+    "Tae": {
+      "sets_in_wins": 9,
+      "sets_in_losses": 10,
+      "kills_per_set_in_wins": 1.75,
+      "kills_per_set_in_losses": 1.0,
+      "errors_per_set_in_wins": 0.8,
+      "errors_per_set_in_losses": 0.8333333333333334,
+      "digs_per_set_in_wins": 3.6666666666666665,
+      "digs_per_set_in_losses": 1.75,
+      "aces_per_set_in_wins": 1.0,
+      "aces_per_set_in_losses": NaN
+    },
+    "Zane": {
+      "sets_in_wins": 9,
+      "sets_in_losses": 10,
+      "kills_per_set_in_wins": 0.75,
+      "kills_per_set_in_losses": 0.6666666666666666,
+      "errors_per_set_in_wins": 0.5,
+      "errors_per_set_in_losses": 0.0,
+      "digs_per_set_in_wins": 1.5714285714285714,
+      "digs_per_set_in_losses": 2.857142857142857,
+      "aces_per_set_in_wins": 1.3333333333333333,
+      "aces_per_set_in_losses": 1.5
+    }
+  },
+  "allen_story": {
+    "season_hit_pct_all_sets": -0.09574468085106383,
+    "season_hit_pct_in_wins": 0.024390243902439025,
+    "season_hit_pct_in_losses": -0.18867924528301888,
+    "n_sets_in_wins": 9,
+    "n_sets_in_losses": 10,
+    "attempts_in_wins": 41,
+    "attempts_in_losses": 53,
+    "kills_in_wins": 12,
+    "kills_in_losses": 8,
+    "errors_in_wins": 11,
+    "errors_in_losses": 18
+  },
+  "cole_position_flex": [
+    {
+      "position": "OH3",
+      "n_sets": 7,
+      "win_rate": 0.42857142857142855,
+      "team_kills_avg": 8.714285714285714,
+      "team_errors_avg": 5.0,
+      "team_hit_pct_avg": 0.1288564454821339,
+      "bean_margin_avg": -0.2857142857142857
+    },
+    {
+      "position": "L",
+      "n_sets": 6,
+      "win_rate": 0.5,
+      "team_kills_avg": 7.0,
+      "team_errors_avg": 4.666666666666667,
+      "team_hit_pct_avg": 0.07920634920634921,
+      "bean_margin_avg": 2.0
+    },
+    {
+      "position": "M3",
+      "n_sets": 3,
+      "win_rate": 0.3333333333333333,
+      "team_kills_avg": 11.0,
+      "team_errors_avg": 6.0,
+      "team_hit_pct_avg": 0.14444444444444446,
+      "bean_margin_avg": -3.3333333333333335
+    },
+    {
+      "position": "OH2",
+      "n_sets": 2,
+      "win_rate": 0.5,
+      "team_kills_avg": 8.0,
+      "team_errors_avg": 3.5,
+      "team_hit_pct_avg": 0.1564102564102564,
+      "bean_margin_avg": -2.5
+    },
+    {
+      "position": "OH1",
+      "n_sets": 1,
+      "win_rate": 1.0,
+      "team_kills_avg": 7.0,
+      "team_errors_avg": 4.0,
+      "team_hit_pct_avg": 0.13636363636363635,
+      "bean_margin_avg": 1.0
+    }
+  ],
+  "margin_distribution": {
+    "wins": {
+      "n": 9,
+      "min": 1.0,
+      "q1": 2.0,
+      "median": 3.0,
+      "q3": 8.0,
+      "max": 11.0,
+      "mean": 4.444444444444445,
+      "std": 3.811532208676424
+    },
+    "losses": {
+      "n": 10,
+      "min": -10.0,
+      "q1": -5.0,
+      "median": -4.5,
+      "q3": -2.25,
+      "max": -2.0,
+      "mean": -4.4,
+      "std": 2.4585451886114367
+    },
+    "interpretation": "Bean won by 4.4 on average (median 3.0); lost by 4.4 on average (median 4.5)."
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "meta": {
+    "playoff_matches": [
+      {
+        "date": "2026-03-04",
+        "round": "Silver M2",
+        "opponent": "Block You-Ah",
+        "opponent_team_number": 15,
+        "result": "Bean won 2-0",
+        "scores_recorded": [
+          "G1: 25-19",
+          "G2: unrecorded",
+          "G3: unrecorded"
+        ]
+      },
+      {
+        "date": "2026-03-11",
+        "round": "Silver Final",
+        "opponent": "Sets Up",
+        "opponent_team_number": 2,
+        "result": "Bean won 2-0 (championship)",
+        "scores_recorded": [
+          "unrecorded"
+        ]
+      }
+    ],
+    "tae_status": "injured, did not play any of 6 playoff games",
+    "format_note": "playoff games to 21-21-15; regular season 25-25-15"
+  },
+  "team_aggregate_comparison": {
+    "attack_attempts": {
+      "regular_season_avg_per_set": 26.8,
+      "playoff_avg_per_set": 23.333333333333332,
+      "delta": -3.4666666666666686,
+      "delta_pct": -0.12935323383084585
+    },
+    "kills": {
+      "regular_season_avg_per_set": 8.15,
+      "playoff_avg_per_set": 8.833333333333334,
+      "delta": 0.6833333333333336,
+      "delta_pct": 0.08384458077709614
+    },
+    "errors": {
+      "regular_season_avg_per_set": 4.7,
+      "playoff_avg_per_set": 4.333333333333333,
+      "delta": -0.36666666666666714,
+      "delta_pct": -0.07801418439716322
+    },
+    "assists": {
+      "regular_season_avg_per_set": 6.8,
+      "playoff_avg_per_set": 8.333333333333334,
+      "delta": 1.533333333333334,
+      "delta_pct": 0.2254901960784315
+    },
+    "blocks_solo": {
+      "regular_season_avg_per_set": 1.0,
+      "playoff_avg_per_set": 1.0,
+      "delta": 0.0,
+      "delta_pct": 0.0
+    },
+    "blocks_assist": {
+      "regular_season_avg_per_set": 3.3636363636363638,
+      "playoff_avg_per_set": 3.0,
+      "delta": -0.36363636363636376,
+      "delta_pct": -0.10810810810810814
+    },
+    "digs": {
+      "regular_season_avg_per_set": 11.9,
+      "playoff_avg_per_set": 15.0,
+      "delta": 3.0999999999999996,
+      "delta_pct": 0.26050420168067223
+    },
+    "aces": {
+      "regular_season_avg_per_set": 1.6666666666666667,
+      "playoff_avg_per_set": 2.5,
+      "delta": 0.8333333333333333,
+      "delta_pct": 0.49999999999999994
+    },
+    "service_errors": {
+      "regular_season_avg_per_set": 2.2222222222222223,
+      "playoff_avg_per_set": 2.8333333333333335,
+      "delta": 0.6111111111111112,
+      "delta_pct": 0.275
+    },
+    "total_serves": {
+      "regular_season_avg_per_set": 18.2,
+      "playoff_avg_per_set": 21.0,
+      "delta": 2.8000000000000007,
+      "delta_pct": 0.15384615384615388
+    },
+    "sr_attempts": {
+      "regular_season_avg_per_set": 16.7,
+      "playoff_avg_per_set": 14.333333333333334,
+      "delta": -2.3666666666666654,
+      "delta_pct": -0.14171656686626738
+    },
+    "sr_0": {
+      "regular_season_avg_per_set": 4.333333333333333,
+      "playoff_avg_per_set": 3.0,
+      "delta": -1.333333333333333,
+      "delta_pct": -0.30769230769230765
+    },
+    "sr_1": {
+      "regular_season_avg_per_set": 3.8333333333333335,
+      "playoff_avg_per_set": 3.6666666666666665,
+      "delta": -0.16666666666666696,
+      "delta_pct": -0.04347826086956529
+    },
+    "sr_2": {
+      "regular_season_avg_per_set": 4.105263157894737,
+      "playoff_avg_per_set": 1.8333333333333333,
+      "delta": -2.271929824561404,
+      "delta_pct": -0.5534188034188036
+    },
+    "sr_3": {
+      "regular_season_avg_per_set": 5.45,
+      "playoff_avg_per_set": 5.833333333333333,
+      "delta": 0.38333333333333286,
+      "delta_pct": 0.07033639143730878
+    },
+    "team_hit_pct": {
+      "regular_season_avg_per_set": 0.12067984249883348,
+      "playoff_avg_per_set": 0.21657258863141218,
+      "delta": 0.0958927461325787,
+      "delta_pct": 0.7946045018537841
+    },
+    "team_srv_pct": {
+      "regular_season_avg_per_set": 0.8828951045846545,
+      "playoff_avg_per_set": 0.8628502361835695,
+      "delta": -0.020044868401084992,
+      "delta_pct": -0.022703567272031502
+    },
+    "team_ace_pct": {
+      "regular_season_avg_per_set": 0.08998843448271367,
+      "playoff_avg_per_set": 0.11799768133101467,
+      "delta": 0.028009246848301,
+      "delta_pct": 0.31125385177893544
+    }
+  },
+  "player_comparison": {
+    "Allen": {
+      "regular_season_sets": 20,
+      "playoff_sets": 6,
+      "regular_season": {
+        "kills_per_set": 1.5384615384615385,
+        "errors_per_set": 1.875,
+        "hit_pct": -0.10204081632653061,
+        "digs_per_set": 1.8,
+        "aces_per_set": 1.0,
+        "assists_per_set": 1.0
+      },
+      "playoffs": {
+        "kills_per_set": 1.6666666666666667,
+        "errors_per_set": 1.0,
+        "hit_pct": 0.2,
+        "digs_per_set": 2.3333333333333335,
+        "aces_per_set": 1.3333333333333333,
+        "assists_per_set": NaN
+      }
+    },
+    "Andy": {
+      "regular_season_sets": 20,
+      "playoff_sets": 6,
+      "regular_season": {
+        "kills_per_set": 2.4705882352941178,
+        "errors_per_set": 1.8181818181818181,
+        "hit_pct": 0.1896551724137931,
+        "digs_per_set": 2.176470588235294,
+        "aces_per_set": 1.0,
+        "assists_per_set": 1.0
+      },
+      "playoffs": {
+        "kills_per_set": 3.0,
+        "errors_per_set": 1.5,
+        "hit_pct": 0.24324324324324326,
+        "digs_per_set": 2.5,
+        "aces_per_set": 1.5,
+        "assists_per_set": 1.0
+      }
+    },
+    "Cade": {
+      "regular_season_sets": 20,
+      "playoff_sets": 6,
+      "regular_season": {
+        "kills_per_set": 1.25,
+        "errors_per_set": 0.9,
+        "hit_pct": 0.12,
+        "digs_per_set": 2.8666666666666667,
+        "aces_per_set": 1.0,
+        "assists_per_set": 6.8
+      },
+      "playoffs": {
+        "kills_per_set": 2.0,
+        "errors_per_set": 1.5,
+        "hit_pct": 0.30434782608695654,
+        "digs_per_set": 3.2,
+        "aces_per_set": 1.5,
+        "assists_per_set": NaN
+      }
+    },
+    "Cole": {
+      "regular_season_sets": 20,
+      "playoff_sets": 6,
+      "regular_season": {
+        "kills_per_set": 1.8,
+        "errors_per_set": 1.0,
+        "hit_pct": 0.22857142857142856,
+        "digs_per_set": 2.2777777777777777,
+        "aces_per_set": 1.0,
+        "assists_per_set": 1.0
+      },
+      "playoffs": {
+        "kills_per_set": 2.5,
+        "errors_per_set": 1.3333333333333333,
+        "hit_pct": 0.045454545454545456,
+        "digs_per_set": 3.3333333333333335,
+        "aces_per_set": 1.5,
+        "assists_per_set": 1.0
+      }
+    },
+    "Jeremy": {
+      "regular_season_sets": 20,
+      "playoff_sets": 6,
+      "regular_season": {
+        "kills_per_set": 2.5625,
+        "errors_per_set": 1.0833333333333333,
+        "hit_pct": 0.25,
+        "digs_per_set": 2.1333333333333333,
+        "aces_per_set": 1.5,
+        "assists_per_set": 1.0
+      },
+      "playoffs": {
+        "kills_per_set": 2.8333333333333335,
+        "errors_per_set": 1.8333333333333333,
+        "hit_pct": 0.14634146341463414,
+        "digs_per_set": 3.3333333333333335,
+        "aces_per_set": 1.0,
+        "assists_per_set": NaN
+      }
+    },
+    "Tae": {
+      "regular_season_sets": 20,
+      "playoff_sets": 0,
+      "regular_season": {
+        "kills_per_set": 1.3,
+        "errors_per_set": 0.8333333333333334,
+        "hit_pct": 0.04477611940298507,
+        "digs_per_set": 2.272727272727273,
+        "aces_per_set": 1.0,
+        "assists_per_set": 1.0
+      },
+      "playoffs": {
+        "kills_per_set": null,
+        "errors_per_set": null,
+        "hit_pct": null,
+        "digs_per_set": null,
+        "aces_per_set": null,
+        "assists_per_set": null
+      }
+    },
+    "Zane": {
+      "regular_season_sets": 20,
+      "playoff_sets": 6,
+      "regular_season": {
+        "kills_per_set": 0.7142857142857143,
+        "errors_per_set": 0.25,
+        "hit_pct": 0.17391304347826086,
+        "digs_per_set": 2.2,
+        "aces_per_set": 1.375,
+        "assists_per_set": 5.75
+      },
+      "playoffs": {
+        "kills_per_set": 1.0,
+        "errors_per_set": NaN,
+        "hit_pct": 0.5,
+        "digs_per_set": 2.0,
+        "aces_per_set": 1.0,
+        "assists_per_set": 7.666666666666667
+      }
+    }
+  },
+  "position_shifts": {
+    "tae_regular_season_positions": {
+      "M1": 10,
+      "M2": 6,
+      "OH1": 2,
+      "OP": 1,
+      "OH2": 1
+    },
+    "tae_playoff_positions": "did not play (injured)",
+    "position_shifts": {
+      "Cole": {
+        "regular_season": {
+          "OH3": "7",
+          "L": "6",
+          "OH2": "3",
+          "M3": "3",
+          "OH1": "1"
+        },
+        "playoffs": {
+          "M2": "3",
+          "M1": "2",
+          "OH1": "1"
+        }
+      },
+      "Cade": {
+        "regular_season": {
+          "M2": "6",
+          "S": "5",
+          "M1": "4",
+          "OP": "3",
+          "M3": "2"
+        },
+        "playoffs": {
+          "M2": "3",
+          "M1": "3"
+        }
+      },
+      "Andy": {
+        "regular_season": {
+          "OH2": "14",
+          "OH1": "3",
+          "M1": "1",
+          "M2": "1",
+          "OP": "1"
+        },
+        "playoffs": {
+          "OH2": "5",
+          "M1": "1"
+        }
+      },
+      "Jeremy": {
+        "regular_season": {
+          "OH1": "14",
+          "M1": "2",
+          "OH2": "2",
+          "M3": "1",
+          "M2": "1"
+        },
+        "playoffs": {
+          "OH1": "5",
+          "OH2": "1"
+        }
+      },
+      "Allen": {
+        "regular_season": {
+          "OP": "15",
+          "M2": "4",
+          "M3": "1"
+        },
+        "playoffs": {
+          "OP": "6"
+        }
+      },
+      "Zane": {
+        "regular_season": {
+          "S": "15",
+          "M2": "4",
+          "M1": "1"
+        },
+        "playoffs": {
+          "S": "6"
+        }
+      }
+    }
+  }
+}

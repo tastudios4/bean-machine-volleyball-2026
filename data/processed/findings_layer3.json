@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "scope": "regular season only (playoffs use 21-21-15 format)",
+    "sets_by_game_number": {
+      "G1": 54,
+      "G2": 54,
+      "G3": 19
+    },
+    "total_sets": 127
+  },
+  "margin_distribution": {
+    "summary_by_game": {
+      "G1": {
+        "n": 54,
+        "mean": 5.425925925925926,
+        "std": 2.5960917785608792,
+        "min": 2.0,
+        "q1": 3.0,
+        "median": 5.0,
+        "q3": 7.0,
+        "max": 11.0
+      },
+      "G2": {
+        "n": 54,
+        "mean": 6.111111111111111,
+        "std": 3.6011877844843774,
+        "min": 2.0,
+        "q1": 3.0,
+        "median": 5.0,
+        "q3": 8.0,
+        "max": 16.0
+      },
+      "G3": {
+        "n": 19,
+        "mean": 3.5789473684210527,
+        "std": 2.6313450188424805,
+        "min": 1.0,
+        "q1": 2.0,
+        "median": 3.0,
+        "q3": 4.0,
+        "max": 12.0
+      }
+    },
+    "pairwise_welch_t_tests": {
+      "G1_vs_G2": {
+        "t": -1.1341770551426351,
+        "p": 0.2595335805413751
+      },
+      "G1_vs_G3": {
+        "t": 2.6406192367179915,
+        "p": 0.012812075133264753
+      },
+      "G2_vs_G3": {
+        "t": 3.2566083910773416,
+        "p": 0.0021982579418901057
+      }
+    }
+  },
+  "scoring_rate": {
+    "G1": {
+      "n": 54,
+      "mean": 44.75925925925926,
+      "std": 2.971151769461937,
+      "min": 39.0,
+      "q1": 43.0,
+      "median": 45.0,
+      "q3": 47.0,
+      "max": 54.0,
+      "pct_at_or_above_cap": 0.05555555555555555
+    },
+    "G2": {
+      "n": 54,
+      "mean": 44.55555555555556,
+      "std": 5.086670211098612,
+      "min": 34.0,
+      "q1": 42.0,
+      "median": 45.0,
+      "q3": 47.0,
+      "max": 68.0,
+      "pct_at_or_above_cap": 0.1111111111111111
+    },
+    "G3": {
+      "n": 19,
+      "mean": 20.210526315789473,
+      "std": 7.114765143062395,
+      "min": 8.0,
+      "q1": 14.0,
+      "median": 21.0,
+      "q3": 26.5,
+      "max": 29.0,
+      "pct_at_or_above_cap": 0.0
+    }
+  },
+  "upset_rate": {
+    "G1": {
+      "n": 53,
+      "favored_win_rate": 0.7169811320754716,
+      "upset_rate": 0.28301886792452835,
+      "mean_win_pct_gap": 0.30887079069622647
+    },
+    "G2": {
+      "n": 53,
+      "favored_win_rate": 0.7358490566037735,
+      "upset_rate": 0.26415094339622647,
+      "mean_win_pct_gap": 0.30887079069622647
+    },
+    "G3": {
+      "n": 19,
+      "favored_win_rate": 0.5263157894736842,
+      "upset_rate": 0.4736842105263158,
+      "mean_win_pct_gap": 0.21058476697894737
+    }
+  },
+  "garbage_time_hypothesis": {
+    "decider_g3_summary": {
+      "n": 17,
+      "mean": 2.8823529411764706,
+      "std": 1.45268514057488,
+      "min": 1.0,
+      "q1": 2.0,
+      "median": 3.0,
+      "q3": 4.0,
+      "max": 6.0
+    },
+    "garbage_g3_summary": {
+      "n": 2,
+      "mean": 9.5,
+      "std": 3.5355339059327378,
+      "min": 7.0,
+      "q1": 8.25,
+      "median": 9.5,
+      "q3": 10.75,
+      "max": 12.0
+    },
+    "welch_t_test": {
+      "t": -2.621156634425299,
+      "p": 0.22420435622815416
+    },
+    "interpretation": "Decider G3s (n=17): mean margin 2.88; Garbage G3s (n=2): mean margin 9.50. Difference: +6.62."
+  },
+  "bean_stats_by_game": {
+    "G1": {
+      "n_sets": 7,
+      "team_kills_avg": 9.571428571428571,
+      "team_errors_avg": 6.428571428571429,
+      "team_hit_pct_avg": 0.09265181822785509,
+      "team_digs_avg": 14.428571428571429,
+      "team_aces_avg": 2.1666666666666665,
+      "bean_margin_avg": -1.1428571428571428,
+      "bean_margin_median": -2.0
+    },
+    "G2": {
+      "n_sets": 7,
+      "team_kills_avg": 9.714285714285714,
+      "team_errors_avg": 4.714285714285714,
+      "team_hit_pct_avg": 0.17055313588850174,
+      "team_digs_avg": 15.0,
+      "team_aces_avg": 1.6,
+      "bean_margin_avg": 0.0,
+      "bean_margin_median": -2.0
+    },
+    "G3": {
+      "n_sets": 6,
+      "team_kills_avg": 4.666666666666667,
+      "team_errors_avg": 2.6666666666666665,
+      "team_hit_pct_avg": 0.0951936951936952,
+      "team_digs_avg": 5.333333333333333,
+      "team_aces_avg": 1.0,
+      "bean_margin_avg": 0.8,
+      "bean_margin_median": 1.0
+    },
+    "caveat": "Tiny sample: ~6 sets per game number. Read as descriptive, not statistical."
+  }
+}

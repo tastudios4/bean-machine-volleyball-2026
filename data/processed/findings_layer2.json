@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "league_matches_regular_season": 56,
+    "league_matches_playoff": 2,
+    "pythagorean_exponent": 2.0,
+    "bracket_assignments": {
+      "Gold": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14
+      ],
+      "Silver": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        13,
+        15
+      ]
+    }
+  },
+  "strength_of_schedule": {
+    "average_opponent_win_pct": 0.5663982259571428,
+    "matches": [
+      {
+        "date": "2026-01-07",
+        "opponent_team_number": 12,
+        "opponent_name": "Raw Butt Sets",
+        "opponent_record": "11W-7L",
+        "opponent_win_pct": 0.6111111111,
+        "bean_sets_won": 1,
+        "bean_sets_lost": 2,
+        "bean_won_match": false
+      },
+      {
+        "date": "2026-01-14",
+        "opponent_team_number": 7,
+        "opponent_name": "Blue Dynasty",
+        "opponent_record": "5W-11L",
+        "opponent_win_pct": 0.3125,
+        "bean_sets_won": 2,
+        "bean_sets_lost": 1,
+        "bean_won_match": true
+      },
+      {
+        "date": "2026-01-21",
+        "opponent_team_number": 8,
+        "opponent_name": "Sugar & Spike",
+        "opponent_record": "13W-4L",
+        "opponent_win_pct": 0.7647058824,
+        "bean_sets_won": 0,
+        "bean_sets_lost": 2,
+        "bean_won_match": false
+      },
+      {
+        "date": "2026-01-28",
+        "opponent_team_number": 9,
+        "opponent_name": "Emerald City Tile Club",
+        "opponent_record": "7W-7L",
+        "opponent_win_pct": 0.5,
+        "bean_sets_won": 2,
+        "bean_sets_lost": 1,
+        "bean_won_match": true
+      },
+      {
+        "date": "2026-02-11",
+        "opponent_team_number": 10,
+        "opponent_name": "Pineapple",
+        "opponent_record": "12W-8L",
+        "opponent_win_pct": 0.6,
+        "bean_sets_won": 2,
+        "bean_sets_lost": 1,
+        "bean_won_match": true
+      },
+      {
+        "date": "2026-02-18",
+        "opponent_team_number": 4,
+        "opponent_name": "Volley these balls",
+        "opponent_record": "11W-0L",
+        "opponent_win_pct": 1.0,
+        "bean_sets_won": 0,
+        "bean_sets_lost": 3,
+        "bean_won_match": false
+      },
+      {
+        "date": "2026-02-25",
+        "opponent_team_number": 13,
+        "opponent_name": "Student Divers",
+        "opponent_record": "3W-14L",
+        "opponent_win_pct": 0.1764705882,
+        "bean_sets_won": 2,
+        "bean_sets_lost": 1,
+        "bean_won_match": true
+      }
+    ],
+    "vs_strong_opponents": {
+      "n": 4,
+      "bean_set_wins": 3,
+      "bean_set_losses": 8
+    },
+    "vs_weak_opponents": {
+      "n": 2,
+      "bean_set_wins": 4,
+      "bean_set_losses": 2
+    },
+    "vs_median_opponents": {
+      "n": 1,
+      "bean_set_wins": 2,
+      "bean_set_losses": 1
+    }
+  },
+  "pythagorean": [
+    {
+      "team_number": 4,
+      "team_name": "Volley these balls",
+      "points_for": 404,
+      "points_against": 306,
+      "actual_wins": 11,
+      "actual_losses": 0,
+      "total_games": 11,
+      "win_pct_actual": 1.0,
+      "win_pct_expected": 0.6354476507872238,
+      "expected_wins": 6.989924158659461,
+      "overperformance_wins": 4.010075841340539
+    },
+    {
+      "team_number": 5,
+      "team_name": "Spikachu",
+      "points_for": 356,
+      "points_against": 297,
+      "actual_wins": 12,
+      "actual_losses": 2,
+      "total_games": 14,
+      "win_pct_actual": 0.8571428571,
+      "win_pct_expected": 0.589620600618763,
+      "expected_wins": 8.254688408662682,
+      "overperformance_wins": 3.745311591337318
+    },
+    {
+      "team_number": 8,
+      "team_name": "Sugar & Spike",
+      "points_for": 371,
+      "points_against": 301,
+      "actual_wins": 13,
+      "actual_losses": 4,
+      "total_games": 17,
+      "win_pct_actual": 0.7647058824,
+      "win_pct_expected": 0.603048518677544,
+      "expected_wins": 10.25182481751825,
+      "overperformance_wins": 2.7481751824817504
+    },
+    {
+      "team_number": 10,
+      "team_name": "Pineapple",
+      "points_for": 419,
+      "points_against": 413,
+      "actual_wins": 12,
+      "actual_losses": 8,
+      "total_games": 20,
+      "win_pct_actual": 0.6,
+      "win_pct_expected": 0.5072111634357034,
+      "expected_wins": 10.144223268714068,
+      "overperformance_wins": 1.855776731285932
+    },
+    {
+      "team_number": 12,
+      "team_name": "Raw Butt Sets",
+      "points_for": 421,
+      "points_against": 407,
+      "actual_wins": 11,
+      "actual_losses": 7,
+      "total_games": 18,
+      "win_pct_actual": 0.6111111111,
+      "win_pct_expected": 0.5169033800927411,
+      "expected_wins": 9.30426084166934,
+      "overperformance_wins": 1.6957391583306602
+    },
+    {
+      "team_number": 6,
+      "team_name": "Double Nut Jam Jigae (DNJJ)",
+      "points_for": 369,
+      "points_against": 392,
+      "actual_wins": 9,
+      "actual_losses": 8,
+      "total_games": 17,
+      "win_pct_actual": 0.5294117647,
+      "win_pct_expected": 0.4698041921849392,
+      "expected_wins": 7.986671267143966,
+      "overperformance_wins": 1.013328732856034
+    },
+    {
+      "team_number": 14,
+      "team_name": "Modelo",
+      "points_for": 392,
+      "points_against": 391,
+      "actual_wins": 9,
+      "actual_losses": 8,
+      "total_games": 17,
+      "win_pct_actual": 0.5294117647,
+      "win_pct_expected": 0.5012771371250551,
+      "expected_wins": 8.521711331125935,
+      "overperformance_wins": 0.4782886688740646
+    },
+    {
+      "team_number": 3,
+      "team_name": "Casual Sets",
+      "points_for": 297,
+      "points_against": 325,
+      "actual_wins": 7,
+      "actual_losses": 8,
+      "total_games": 15,
+      "win_pct_actual": 0.4666666667,
+      "win_pct_expected": 0.45507496104914513,
+      "expected_wins": 6.826124415737177,
+      "overperformance_wins": 0.1738755842628228
+    },
+    {
+      "team_number": 11,
+      "team_name": "Bean Machine",
+      "points_for": 367,
+      "points_against": 383,
+      "actual_wins": 10,
+      "actual_losses": 11,
+      "total_games": 21,
+      "win_pct_actual": 0.4761904762,
+      "win_pct_expected": 0.4786763712870232,
+      "expected_wins": 10.052203797027486,
+      "overperformance_wins": -0.05220379702748623
+    },
+    {
+      "team_number": 9,
+      "team_name": "Emerald City Tile Club",
+      "points_for": 354,
+      "points_against": 342,
+      "actual_wins": 7,
+      "actual_losses": 7,
+      "total_games": 14,
+      "win_pct_actual": 0.5,
+      "win_pct_expected": 0.5172362555720654,
+      "expected_wins": 7.241307578008916,
+      "overperformance_wins": -0.24130757800891622
+    },
+    {
+      "team_number": 2,
+      "team_name": "Sets Up",
+      "points_for": 290,
+      "points_against": 275,
+      "actual_wins": 5,
+      "actual_losses": 8,
+      "total_games": 13,
+      "win_pct_actual": 0.3846153846,
+      "win_pct_expected": 0.5265299733917671,
+      "expected_wins": 6.844889654092972,
+      "overperformance_wins": -1.844889654092972
+    },
+    {
+      "team_number": 7,
+      "team_name": "Blue Dynasty",
+      "points_for": 277,
+      "points_against": 319,
+      "actual_wins": 5,
+      "actual_losses": 11,
+      "total_games": 16,
+      "win_pct_actual": 0.3125,
+      "win_pct_expected": 0.4298784245616001,
+      "expected_wins": 6.878054792985601,
+      "overperformance_wins": -1.8780547929856013
+    },
+    {
+      "team_number": 15,
+      "team_name": "Block You-ah",
+      "points_for": 272,
+      "points_against": 345,
+      "actual_wins": 2,
+      "actual_losses": 12,
+      "total_games": 14,
+      "win_pct_actual": 0.1428571429,
+      "win_pct_expected": 0.38331891258956835,
+      "expected_wins": 5.366464776253957,
+      "overperformance_wins": -3.366464776253957
+    },
+    {
+      "team_number": 13,
+      "team_name": "Student Divers",
+      "points_for": 292,
+      "points_against": 368,
+      "actual_wins": 3,
+      "actual_losses": 14,
+      "total_games": 17,
+      "win_pct_actual": 0.1764705882,
+      "win_pct_expected": 0.3863553976654825,
+      "expected_wins": 6.568041760313203,
+      "overperformance_wins": -3.5680417603132026
+    },
+    {
+      "team_number": 1,
+      "team_name": "Tape Ticklers",
+      "points_for": 326,
+      "points_against": 343,
+      "actual_wins": 3,
+      "actual_losses": 12,
+      "total_games": 15,
+      "win_pct_actual": 0.2,
+      "win_pct_expected": 0.4746053366082394,
+      "expected_wins": 7.119080049123591,
+      "overperformance_wins": -4.119080049123591
+    }
+  ],
+  "margin_distribution": {
+    "league_all_sets": {
+      "n": 127,
+      "min": 1,
+      "q1": 3.0,
+      "median": 5.0,
+      "q3": 7.5,
+      "max": 16,
+      "mean": 5.440944881889764
+    },
+    "bean_sets": {
+      "n": 20,
+      "min": 1,
+      "q1": 2.0,
+      "median": 3.5,
+      "q3": 6.5,
+      "max": 12,
+      "mean": 4.8
+    }
+  },
+  "bean_per_opponent": [
+    {
+      "date": "2026-01-28",
+      "opponent_number": 9,
+      "opponent_name": "Emerald City Tile Club",
+      "opponent_final_win_pct": 0.5,
+      "bean_set_record": "2-1",
+      "match_margin": 7,
+      "measurable_sets": 3,
+      "bean_won_match": true
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_number": 12,
+      "opponent_name": "Raw Butt Sets",
+      "opponent_final_win_pct": 0.6111111111,
+      "bean_set_record": "1-2",
+      "match_margin": 5,
+      "measurable_sets": 3,
+      "bean_won_match": false
+    },
+    {
+      "date": "2026-01-14",
+      "opponent_number": 7,
+      "opponent_name": "Blue Dynasty",
+      "opponent_final_win_pct": 0.3125,
+      "bean_set_record": "2-1",
+      "match_margin": 4,
+      "measurable_sets": 3,
+      "bean_won_match": true
+    },
+    {
+      "date": "2026-02-25",
+      "opponent_number": 13,
+      "opponent_name": "Student Divers",
+      "opponent_final_win_pct": 0.1764705882,
+      "bean_set_record": "2-1",
+      "match_margin": 3,
+      "measurable_sets": 3,
+      "bean_won_match": true
+    },
+    {
+      "date": "2026-02-11",
+      "opponent_number": 10,
+      "opponent_name": "Pineapple",
+      "opponent_final_win_pct": 0.6,
+      "bean_set_record": "2-1",
+      "match_margin": 1,
+      "measurable_sets": 3,
+      "bean_won_match": true
+    },
+    {
+      "date": "2026-01-21",
+      "opponent_number": 8,
+      "opponent_name": "Sugar & Spike",
+      "opponent_final_win_pct": 0.7647058824,
+      "bean_set_record": "0-2",
+      "match_margin": -16,
+      "measurable_sets": 2,
+      "bean_won_match": false
+    },
+    {
+      "date": "2026-02-18",
+      "opponent_number": 4,
+      "opponent_name": "Volley these balls",
+      "opponent_final_win_pct": 1.0,
+      "bean_set_record": "0-3",
+      "match_margin": -20,
+      "measurable_sets": 3,
+      "bean_won_match": false
+    }
+  ],
+  "silver_vs_gold": {
+    "Gold": {
+      "n_teams": 8,
+      "avg_win_pct": 0.6739729225,
+      "avg_points_for_per_set": 21.601636374246667,
+      "avg_points_against_per_set": 19.818443627450982,
+      "avg_point_differential_per_set": 1.783192746795688,
+      "teams": [
+        "Double Nut Jam Jigae (DNJJ)",
+        "Emerald City Tile Club",
+        "Modelo",
+        "Pineapple",
+        "Raw Butt Sets",
+        "Spikachu",
+        "Sugar & Spike",
+        "Volley these balls"
+      ]
+    },
+    "Silver": {
+      "n_teams": 7,
+      "avg_win_pct": 0.3084714655142857,
+      "avg_points_for_per_set": 19.39705728445224,
+      "avg_points_against_per_set": 21.579501031181703,
+      "avg_point_differential_per_set": -2.182443746729461,
+      "teams": [
+        "Bean Machine",
+        "Block You-ah",
+        "Blue Dynasty",
+        "Casual Sets",
+        "Sets Up",
+        "Student Divers",
+        "Tape Ticklers"
+      ]
+    },
+    "gap_in_win_pct": 0.36550145698571423
+  }
+}
