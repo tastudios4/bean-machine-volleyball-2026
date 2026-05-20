@@ -3,57 +3,57 @@ match_id,date,week_number,court,time_slot,team_a_number,team_a_name,team_b_numbe
 2026-01-07_C2_M1,2026-01-07,1,2,8:10,3,Casual Sets,4,Volley these balls,15.0,25.0,14.0,25.0,,,4.0,False,"4   15-25, 14-25",False
 2026-01-07_C3_M1,2026-01-07,1,3,8:10,5,Spikachu,6,Double Nut Jam Jigae (DNJJ),25.0,22.0,25.0,18.0,,,5.0,False,"5 win 25-22, 25-18",False
 2026-01-07_C4_M1,2026-01-07,1,4,8:10,7,Blue Dynasty,8,Sugar & Spike,17.0,25.0,21.0,25.0,,,8.0,False,"8 win 17-25, 21-25",False
-2026-01-07_C1_M1,2026-01-07,1,1,9:10,9,Emerald City Tile Club,10,Pineapple,21.0,25.0,23.0,25.0,,,10.0,False,"10 win, 21-25, 23-25",False
-2026-01-07_C2_M1,2026-01-07,1,2,9:10,11,Bean Machine,12,Raw Butt Sets,24.0,26.0,26.0,15.0,2.0,6.0,12.0,False,"12 24-26, 26-15, 2-6",False
-2026-01-07_C3_M1,2026-01-07,1,3,9:10,13,Student Divers,14,Modelo,16.0,25.0,20.0,25.0,,,14.0,False,"14 win 16-25, 20-25",False
-2026-01-07_C4_M1,2026-01-07,1,4,9:10,15,Block You-ah,6,Double Nut Jam Jigae (DNJJ),25.0,23.0,26.0,24.0,,,6.0,False,"6 win, 25-23, 26-24",False
-2026-01-14_C1_M2,2026-01-14,2,1,8:10,8,Sugar & Spike,10,Pineapple,22.0,25.0,25.0,21.0,4.0,5.0,10.0,False,"(10 win) 22-25, 25-21, 4-5",False
-2026-01-14_C2_M2,2026-01-14,2,2,8:10,3,Casual Sets,15,Block You-ah,25.0,20.0,25.0,16.0,,,3.0,False,"3 win: 25-20, 25-16",False
-2026-01-14_C3_M2,2026-01-14,2,3,8:10,7,Blue Dynasty,11,Bean Machine,17.0,25.0,25.0,20.0,14.0,15.0,11.0,False,"11w,17-25,25-20,14-15",False
-2026-01-14_C4_M2,2026-01-14,2,4,8:10,4,Volley these balls,14,Modelo,25.0,21.0,25.0,21.0,,,4.0,False,"4 win  25-21, 25-21",False
+2026-01-07_C1_M2,2026-01-07,1,1,9:10,9,Emerald City Tile Club,10,Pineapple,21.0,25.0,23.0,25.0,,,10.0,False,"10 win, 21-25, 23-25",False
+2026-01-07_C2_M2,2026-01-07,1,2,9:10,11,Bean Machine,12,Raw Butt Sets,24.0,26.0,26.0,15.0,2.0,6.0,12.0,False,"12 24-26, 26-15, 2-6",False
+2026-01-07_C3_M2,2026-01-07,1,3,9:10,13,Student Divers,14,Modelo,16.0,25.0,20.0,25.0,,,14.0,False,"14 win 16-25, 20-25",False
+2026-01-07_C4_M2,2026-01-07,1,4,9:10,15,Block You-ah,6,Double Nut Jam Jigae (DNJJ),25.0,23.0,26.0,24.0,,,6.0,False,"6 win, 25-23, 26-24",False
+2026-01-14_C1_M1,2026-01-14,2,1,8:10,8,Sugar & Spike,10,Pineapple,22.0,25.0,25.0,21.0,4.0,5.0,10.0,False,"(10 win) 22-25, 25-21, 4-5",False
+2026-01-14_C2_M1,2026-01-14,2,2,8:10,3,Casual Sets,15,Block You-ah,25.0,20.0,25.0,16.0,,,3.0,False,"3 win: 25-20, 25-16",False
+2026-01-14_C3_M1,2026-01-14,2,3,8:10,7,Blue Dynasty,11,Bean Machine,17.0,25.0,25.0,20.0,14.0,15.0,11.0,False,"11w,17-25,25-20,14-15",False
+2026-01-14_C4_M1,2026-01-14,2,4,8:10,4,Volley these balls,14,Modelo,25.0,21.0,25.0,21.0,,,4.0,False,"4 win  25-21, 25-21",False
 2026-01-14_C1_M2,2026-01-14,2,1,9:10,6,Double Nut Jam Jigae (DNJJ),12,Raw Butt Sets,25.0,22.0,20.0,25.0,7.0,4.0,6.0,False,"6 win, 25-22, 20-25, 7-4",False
 2026-01-14_C2_M2,2026-01-14,2,2,9:10,5,Spikachu,13,Student Divers,25.0,17.0,25.0,20.0,,,5.0,False,"5 win: 25-17, 25-20",False
 2026-01-14_C3_M2,2026-01-14,2,3,9:10,1,Tape Ticklers,9,Emerald City Tile Club,19.0,25.0,12.0,25.0,,,9.0,False,"9 win, 19-25, 12-25",False
 2026-01-14_C4_M2,2026-01-14,2,4,9:10,2,Sets Up,10,Pineapple,26.0,28.0,25.0,27.0,,,10.0,False,"10 win, 26-28, 25-27",False
-2026-01-21_C1_M3,2026-01-21,3,1,8:10,6,Double Nut Jam Jigae (DNJJ),13,Student Divers,25.0,21.0,25.0,18.0,,,6.0,False,6 win 25-21 25-18,False
-2026-01-21_C2_M3,2026-01-21,3,2,8:10,4,Volley these balls,10,Pineapple,25.0,14.0,25.0,10.0,,,4.0,False,"4 win: 25-14, 25-10",False
-2026-01-21_C3_M3,2026-01-21,3,3,8:10,8,Sugar & Spike,11,Bean Machine,25.0,19.0,25.0,15.0,,,8.0,False,"(8 win) 25-19, 25-15",False
-2026-01-21_C4_M3,2026-01-21,3,4,8:10,2,Sets Up,9,Emerald City Tile Club,23.0,25.0,21.0,25.0,,,9.0,False,"9 win, 23-25, 21-25",False
-2026-01-21_C1_M3,2026-01-21,3,1,9:10,1,Tape Ticklers,3,Casual Sets,20.0,25.0,25.0,19.0,,,,True,"tie 20-25, 25-19",False
-2026-01-21_C2_M3,2026-01-21,3,2,9:10,5,Spikachu,14,Modelo,25.0,20.0,25.0,22.0,,,5.0,False,"5 win: 25-20, 25-22",False
-2026-01-21_C3_M3,2026-01-21,3,3,9:10,4,Volley these balls,15,Block You-ah,25.0,16.0,25.0,14.0,,,4.0,False,"4 win: 25-16, 25-14",False
-2026-01-21_C4_M3,2026-01-21,3,4,9:10,7,Blue Dynasty,12,Raw Butt Sets,25.0,20.0,18.0,25.0,7.0,5.0,7.0,False,"7 win, 25-20, 18-25, 7-5",False
-2026-01-28_C1_M4,2026-01-28,4,1,8:10,2,Sets Up,3,Casual Sets,16.0,25.0,25.0,14.0,15.0,9.0,3.0,False,"3 win: 16-25, 25-14, 15-9",False
-2026-01-28_C2_M4,2026-01-28,4,2,8:10,10,Pineapple,13,Student Divers,21.0,25.0,25.0,9.0,15.0,11.0,10.0,False,"10 win, 21-25, 25-9, 15-11",False
-2026-01-28_C3_M4,2026-01-28,4,3,8:10,5,Spikachu,15,Block You-ah,25.0,18.0,25.0,22.0,,,5.0,False,"5 win: 25-18, 25-22",False
-2026-01-28_C4_M4,2026-01-28,4,4,8:10,8,Sugar & Spike,12,Raw Butt Sets,22.0,25.0,25.0,17.0,15.0,14.0,8.0,False,"8 win, 22-25, 25-17, 15-14",False
-2026-01-28_C1_M4,2026-01-28,4,1,9:10,7,Blue Dynasty,13,Student Divers,,,,,,,,True,"Both teams won 1 set, no time for third set",False
-2026-01-28_C2_M4,2026-01-28,4,2,9:10,9,Emerald City Tile Club,11,Bean Machine,25.0,20.0,16.0,25.0,12.0,15.0,11.0,False,"11: 25-20, 16-25, 12-15 ",False
-2026-01-28_C3_M4,2026-01-28,4,3,9:10,1,Tape Ticklers,4,Volley these balls,25.0,15.0,25.0,23.0,,,4.0,False,"4 win: 25-15, 25-23",False
-2026-01-28_C4_M4,2026-01-28,4,4,9:10,6,Double Nut Jam Jigae (DNJJ),14,Modelo,25.0,20.0,20.0,25.0,,,,True,"Tie: 25-20, 20-25",False
-2026-02-11_C1_M5,2026-02-11,5,1,8:10,7,Blue Dynasty,14,Modelo,21.0,25.0,21.0,25.0,,,14.0,False,"14 win, 21-25, 21-25",False
-2026-02-11_C2_M5,2026-02-11,5,2,8:10,8,Sugar & Spike,13,Student Divers,25.0,17.0,25.0,22.0,,,8.0,False,"8 win: 25-17, 25-22 ",False
-2026-02-11_C3_M5,2026-02-11,5,3,8:10,3,Casual Sets,6,Double Nut Jam Jigae (DNJJ),25.0,18.0,25.0,18.0,,,3.0,False,"3 win, 25-18, 25-18",False
-2026-02-11_C4_M5,2026-02-11,5,4,8:10,1,Tape Ticklers,5,Spikachu,26.0,24.0,19.0,25.0,7.0,10.0,5.0,False,"5 win: 26-24, 19-25, 7-10",False
-2026-02-11_C1_M5,2026-02-11,5,1,9:10,10,Pineapple,11,Bean Machine,23.0,25.0,25.0,23.0,10.0,11.0,11.0,False,"11: 23-25, 25-23, 10-11",False
-2026-02-11_C2_M5,2026-02-11,5,2,9:10,2,Sets Up,4,Volley these balls,22.0,25.0,17.0,25.0,,,4.0,False,"4 win: 22-25, 17-25",False
-2026-02-11_C3_M5,2026-02-11,5,3,9:10,9,Emerald City Tile Club,12,Raw Butt Sets,19.0,25.0,25.0,15.0,12.0,15.0,12.0,False,"12 win: 19-25, 25-15, 12-15",False
-2026-02-11_C4_M5,2026-02-11,5,4,9:10,7,Blue Dynasty,15,Block You-ah,22.0,25.0,26.0,24.0,,,15.0,False,"15 win: 22-25, 26-24",False
-2026-02-18_C1_M6,2026-02-18,6,1,8:10,10,Pineapple,12,Raw Butt Sets,21.0,25.0,25.0,23.0,15.0,12.0,10.0,False,"10 win; 21-25, 25-23, 15-12",False
-2026-02-18_C2_M6,2026-02-18,6,2,8:10,3,Casual Sets,5,Spikachu,18.0,25.0,17.0,25.0,,,5.0,False,"5 win: 18-25, 17-25",False
-2026-02-18_C3_M6,2026-02-18,6,3,8:10,9,Emerald City Tile Club,13,Student Divers,25.0,22.0,25.0,20.0,,,9.0,False,"9 win: 25-22, 25-20 (?)",False
-2026-02-18_C4_M6,2026-02-18,6,4,8:10,8,Sugar & Spike,14,Modelo,25.0,17.0,20.0,25.0,13.0,8.0,8.0,False,"8 win, 25-17, 20-25, 13-8",False
-2026-02-18_C1_M6,2026-02-18,6,1,9:10,4,Volley these balls,11,Bean Machine,25.0,22.0,25.0,20.0,15.0,3.0,4.0,False,"4 win, 25-22, 25-20, 15-3",False
-2026-02-18_C2_M6,2026-02-18,6,2,9:10,2,Sets Up,7,Blue Dynasty,,,,,,,7.0,False,7 win,False
-2026-02-18_C3_M6,2026-02-18,6,3,9:10,12,Raw Butt Sets,15,Block You-ah,25.0,18.0,25.0,15.0,,,12.0,False,"12 win: 25-18, 25-15",False
-2026-02-18_C4_M6,2026-02-18,6,4,9:10,1,Tape Ticklers,6,Double Nut Jam Jigae (DNJJ),18.0,25.0,25.0,23.0,13.0,11.0,6.0,False,"6 win, 18-25, 25-23, 13-11",False
-2026-02-25_C1_M7,2026-02-25,7,1,8:10,2,Sets Up,6,Double Nut Jam Jigae (DNJJ),25.0,19.0,25.0,21.0,,,2.0,False,"2 win, 25-19, 25-21",False
-2026-02-25_C2_M7,2026-02-25,7,2,8:10,9,Emerald City Tile Club,14,Modelo,18.0,25.0,33.0,35.0,,,14.0,False,"14 win, 18-25, 33-35",False
-2026-02-25_C3_M7,2026-02-25,7,3,8:10,3,Casual Sets,12,Raw Butt Sets,16.0,25.0,25.0,27.0,,,12.0,False,"12 win 16-25, 25-27",False
-2026-02-25_C4_M7,2026-02-25,7,4,8:10,8,Sugar & Spike,15,Block You-ah,25.0,18.0,25.0,15.0,,,8.0,False,"8 win, 25-18, 25-15",False
-2026-02-25_C1_M7,2026-02-25,7,1,9:10,4,Volley these balls,5,Spikachu,25.0,23.0,26.0,24.0,,,4.0,False,"4 win, 25-23, 26-24",False
-2026-02-25_C2_M7,2026-02-25,7,2,9:10,11,Bean Machine,13,Student Divers,23.0,25.0,25.0,23.0,9.0,6.0,11.0,False,"11 win: 23-25, 25-23, 9-6",False
-2026-02-25_C3_M7,2026-02-25,7,3,9:10,10,Pineapple,14,Modelo,19.0,25.0,25.0,17.0,15.0,11.0,10.0,False,"10 win; 19-25, 25-17, 15-11",False
-2026-02-25_C4_M7,2026-02-25,7,4,9:10,1,Tape Ticklers,7,Blue Dynasty,25.0,22.0,25.0,18.0,10.0,3.0,1.0,False,"1 win, 25-22, 25-18, 10-3",False
+2026-01-21_C1_M1,2026-01-21,3,1,8:10,6,Double Nut Jam Jigae (DNJJ),13,Student Divers,25.0,21.0,25.0,18.0,,,6.0,False,6 win 25-21 25-18,False
+2026-01-21_C2_M1,2026-01-21,3,2,8:10,4,Volley these balls,10,Pineapple,25.0,14.0,25.0,10.0,,,4.0,False,"4 win: 25-14, 25-10",False
+2026-01-21_C3_M1,2026-01-21,3,3,8:10,8,Sugar & Spike,11,Bean Machine,25.0,19.0,25.0,15.0,,,8.0,False,"(8 win) 25-19, 25-15",False
+2026-01-21_C4_M1,2026-01-21,3,4,8:10,2,Sets Up,9,Emerald City Tile Club,23.0,25.0,21.0,25.0,,,9.0,False,"9 win, 23-25, 21-25",False
+2026-01-21_C1_M2,2026-01-21,3,1,9:10,1,Tape Ticklers,3,Casual Sets,20.0,25.0,25.0,19.0,,,,True,"tie 20-25, 25-19",False
+2026-01-21_C2_M2,2026-01-21,3,2,9:10,5,Spikachu,14,Modelo,25.0,20.0,25.0,22.0,,,5.0,False,"5 win: 25-20, 25-22",False
+2026-01-21_C3_M2,2026-01-21,3,3,9:10,4,Volley these balls,15,Block You-ah,25.0,16.0,25.0,14.0,,,4.0,False,"4 win: 25-16, 25-14",False
+2026-01-21_C4_M2,2026-01-21,3,4,9:10,7,Blue Dynasty,12,Raw Butt Sets,25.0,20.0,18.0,25.0,7.0,5.0,7.0,False,"7 win, 25-20, 18-25, 7-5",False
+2026-01-28_C1_M1,2026-01-28,4,1,8:10,2,Sets Up,3,Casual Sets,16.0,25.0,25.0,14.0,15.0,9.0,3.0,False,"3 win: 16-25, 25-14, 15-9",False
+2026-01-28_C2_M1,2026-01-28,4,2,8:10,10,Pineapple,13,Student Divers,21.0,25.0,25.0,9.0,15.0,11.0,10.0,False,"10 win, 21-25, 25-9, 15-11",False
+2026-01-28_C3_M1,2026-01-28,4,3,8:10,5,Spikachu,15,Block You-ah,25.0,18.0,25.0,22.0,,,5.0,False,"5 win: 25-18, 25-22",False
+2026-01-28_C4_M1,2026-01-28,4,4,8:10,8,Sugar & Spike,12,Raw Butt Sets,22.0,25.0,25.0,17.0,15.0,14.0,8.0,False,"8 win, 22-25, 25-17, 15-14",False
+2026-01-28_C1_M2,2026-01-28,4,1,9:10,7,Blue Dynasty,13,Student Divers,,,,,,,,True,"Both teams won 1 set, no time for third set",False
+2026-01-28_C2_M2,2026-01-28,4,2,9:10,9,Emerald City Tile Club,11,Bean Machine,25.0,20.0,16.0,25.0,12.0,15.0,11.0,False,"11: 25-20, 16-25, 12-15 ",False
+2026-01-28_C3_M2,2026-01-28,4,3,9:10,1,Tape Ticklers,4,Volley these balls,25.0,15.0,25.0,23.0,,,4.0,False,"4 win: 25-15, 25-23",False
+2026-01-28_C4_M2,2026-01-28,4,4,9:10,6,Double Nut Jam Jigae (DNJJ),14,Modelo,25.0,20.0,20.0,25.0,,,,True,"Tie: 25-20, 20-25",False
+2026-02-11_C1_M1,2026-02-11,5,1,8:10,7,Blue Dynasty,14,Modelo,21.0,25.0,21.0,25.0,,,14.0,False,"14 win, 21-25, 21-25",False
+2026-02-11_C2_M1,2026-02-11,5,2,8:10,8,Sugar & Spike,13,Student Divers,25.0,17.0,25.0,22.0,,,8.0,False,"8 win: 25-17, 25-22 ",False
+2026-02-11_C3_M1,2026-02-11,5,3,8:10,3,Casual Sets,6,Double Nut Jam Jigae (DNJJ),25.0,18.0,25.0,18.0,,,3.0,False,"3 win, 25-18, 25-18",False
+2026-02-11_C4_M1,2026-02-11,5,4,8:10,1,Tape Ticklers,5,Spikachu,26.0,24.0,19.0,25.0,7.0,10.0,5.0,False,"5 win: 26-24, 19-25, 7-10",False
+2026-02-11_C1_M2,2026-02-11,5,1,9:10,10,Pineapple,11,Bean Machine,23.0,25.0,25.0,23.0,10.0,11.0,11.0,False,"11: 23-25, 25-23, 10-11",False
+2026-02-11_C2_M2,2026-02-11,5,2,9:10,2,Sets Up,4,Volley these balls,22.0,25.0,17.0,25.0,,,4.0,False,"4 win: 22-25, 17-25",False
+2026-02-11_C3_M2,2026-02-11,5,3,9:10,9,Emerald City Tile Club,12,Raw Butt Sets,19.0,25.0,25.0,15.0,12.0,15.0,12.0,False,"12 win: 19-25, 25-15, 12-15",False
+2026-02-11_C4_M2,2026-02-11,5,4,9:10,7,Blue Dynasty,15,Block You-ah,22.0,25.0,26.0,24.0,,,15.0,False,"15 win: 22-25, 26-24",False
+2026-02-18_C1_M1,2026-02-18,6,1,8:10,10,Pineapple,12,Raw Butt Sets,21.0,25.0,25.0,23.0,15.0,12.0,10.0,False,"10 win; 21-25, 25-23, 15-12",False
+2026-02-18_C2_M1,2026-02-18,6,2,8:10,3,Casual Sets,5,Spikachu,18.0,25.0,17.0,25.0,,,5.0,False,"5 win: 18-25, 17-25",False
+2026-02-18_C3_M1,2026-02-18,6,3,8:10,9,Emerald City Tile Club,13,Student Divers,25.0,22.0,25.0,20.0,,,9.0,False,"9 win: 25-22, 25-20 (?)",False
+2026-02-18_C4_M1,2026-02-18,6,4,8:10,8,Sugar & Spike,14,Modelo,25.0,17.0,20.0,25.0,13.0,8.0,8.0,False,"8 win, 25-17, 20-25, 13-8",False
+2026-02-18_C1_M2,2026-02-18,6,1,9:10,4,Volley these balls,11,Bean Machine,25.0,22.0,25.0,20.0,15.0,3.0,4.0,False,"4 win, 25-22, 25-20, 15-3",False
+2026-02-18_C2_M2,2026-02-18,6,2,9:10,2,Sets Up,7,Blue Dynasty,,,,,,,7.0,False,7 win,False
+2026-02-18_C3_M2,2026-02-18,6,3,9:10,12,Raw Butt Sets,15,Block You-ah,25.0,18.0,25.0,15.0,,,12.0,False,"12 win: 25-18, 25-15",False
+2026-02-18_C4_M2,2026-02-18,6,4,9:10,1,Tape Ticklers,6,Double Nut Jam Jigae (DNJJ),18.0,25.0,25.0,23.0,13.0,11.0,6.0,False,"6 win, 18-25, 25-23, 13-11",False
+2026-02-25_C1_M1,2026-02-25,7,1,8:10,2,Sets Up,6,Double Nut Jam Jigae (DNJJ),25.0,19.0,25.0,21.0,,,2.0,False,"2 win, 25-19, 25-21",False
+2026-02-25_C2_M1,2026-02-25,7,2,8:10,9,Emerald City Tile Club,14,Modelo,18.0,25.0,33.0,35.0,,,14.0,False,"14 win, 18-25, 33-35",False
+2026-02-25_C3_M1,2026-02-25,7,3,8:10,3,Casual Sets,12,Raw Butt Sets,16.0,25.0,25.0,27.0,,,12.0,False,"12 win 16-25, 25-27",False
+2026-02-25_C4_M1,2026-02-25,7,4,8:10,8,Sugar & Spike,15,Block You-ah,25.0,18.0,25.0,15.0,,,8.0,False,"8 win, 25-18, 25-15",False
+2026-02-25_C1_M2,2026-02-25,7,1,9:10,4,Volley these balls,5,Spikachu,25.0,23.0,26.0,24.0,,,4.0,False,"4 win, 25-23, 26-24",False
+2026-02-25_C2_M2,2026-02-25,7,2,9:10,11,Bean Machine,13,Student Divers,23.0,25.0,25.0,23.0,9.0,6.0,11.0,False,"11 win: 23-25, 25-23, 9-6",False
+2026-02-25_C3_M2,2026-02-25,7,3,9:10,10,Pineapple,14,Modelo,19.0,25.0,25.0,17.0,15.0,11.0,10.0,False,"10 win; 19-25, 25-17, 15-11",False
+2026-02-25_C4_M2,2026-02-25,7,4,9:10,1,Tape Ticklers,7,Blue Dynasty,25.0,22.0,25.0,18.0,10.0,3.0,1.0,False,"1 win, 25-22, 25-18, 10-3",False
 2026-03-04_C1_M2,2026-03-04,8,1,21:00,11,Bean Machine,15,Block You-ah,25.0,19.0,,,,,11.0,False,manual: Bean won 2-0 vs Block You-Ah. G2 score not recorded. G3 was played (player_stats has 26-0304G3) but result irrelevant; score not recorded.,True
 2026-03-11_C3_M6,2026-03-11,9,3,21:00,11,Bean Machine,2,Sets Up,,,,,,,11.0,False,manual: Bean won the Silver bracket championship 2-0 vs Sets Up. G1 and G2 scores not recorded. G3 was played (player_stats has 26-0311G3) but result irrelevant; score not recorded.,True

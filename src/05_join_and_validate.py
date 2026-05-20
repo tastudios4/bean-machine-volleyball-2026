@@ -51,6 +51,21 @@ def main() -> None:
 
     findings: list[tuple[str, str]] = []  # (severity, message)
 
+    # ----- 0. match_id uniqueness -----
+    # match_id is the primary key of league_matches.csv. Every match must have
+    # a distinct id, or downstream lookups silently grab the wrong row.
+    banner("0. MATCH_ID UNIQUENESS (league_matches.csv)")
+    dup_mask = league.match_id.duplicated(keep=False)
+    if dup_mask.any():
+        dups = sorted(league[dup_mask].match_id.unique())
+        print(f"  FAIL: {len(dups)} match_id(s) used by more than one match:")
+        for d in dups:
+            print(f"    {d}")
+        findings.append(("WARNING",
+            f"league_matches.csv has {len(dups)} non-unique match_id(s)"))
+    else:
+        print(f"  All {len(league)} match_ids are unique. [OK]")
+
     # ----- 1. match_id alignment -----
     banner("1. MATCH_ID ALIGNMENT (bean_machine_games <-> player_stats)")
     bean_ids = set(bean.match_id)

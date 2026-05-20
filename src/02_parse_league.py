@@ -230,7 +230,10 @@ def parse_regular_season(
                 team_a, team_b = matchup
                 parsed = parse_score_cell(score_cell, team_a, team_b)
 
-                match_id = f"{match_date.isoformat()}_C{court_n}_M{week_idx}"
+                # match_id must be unique. Each court hosts 2 matches per week
+                # (the 8:10 and 9:10 time slots), so M is the match slot on that
+                # court that day: M1 = 8:10 match, M2 = 9:10 match.
+                match_id = f"{match_date.isoformat()}_C{court_n}_M{offset + 1}"
                 # Map cell-order set scores to team_a / team_b columns.
                 # The score cell uses the matchup order (team_a first), so pairs[i][0]=team_a points.
                 set_points = parsed.set_scores + [(None, None)] * (3 - len(parsed.set_scores))
