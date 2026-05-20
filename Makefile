@@ -1,13 +1,14 @@
-.PHONY: all data analysis extract parse-league bean-games player-stats validate \
-        layer1 layer2 game3 playoff trends roles blowouts synthesize clean venv
+.PHONY: all data analysis charts extract parse-league bean-games player-stats \
+        validate layer1 layer2 game3 playoff trends roles blowouts synthesize \
+        charts-league charts-team charts-game3 clean venv
 
 PY := .venv/bin/python
 
 venv:
 	python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install -r requirements.txt
 
-# Full project: Phase 1 data layer + Phase 2 analysis
-all: data analysis
+# Full project: Phase 1 data layer + Phase 2 analysis + Phase 3 charts
+all: data analysis charts
 
 # ---- Phase 1: data layer ----
 data: extract parse-league bean-games player-stats validate
@@ -55,6 +56,19 @@ blowouts:
 synthesize:
 	$(PY) src/13_synthesize.py
 
+# ---- Phase 3: charts ----
+charts: charts-league charts-team charts-game3
+
+charts-league:
+	$(PY) src/20_charts_league.py
+
+charts-team:
+	$(PY) src/21_charts_team.py
+
+charts-game3:
+	$(PY) src/22_charts_game3.py
+
 clean:
 	rm -rf data/raw/sheets data/processed/*.csv data/manual_review/*.csv \
-	       data/processed/findings_*.json data/processed/findings_summary.md
+	       data/processed/findings_*.json data/processed/findings_summary.md \
+	       charts/*.png

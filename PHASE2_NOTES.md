@@ -127,13 +127,25 @@ was a collapse.
 
 **Context (<=8):** Cole's best spot may be libero (suggestive only).
 
+## Phase 3 — charts (DONE)
+
+8 charts in `charts/`, built by 3 scripts (`20_charts_league.py`,
+`21_charts_team.py`, `22_charts_game3.py`) sharing `src/chart_style.py`:
+
+- `pythagorean_luck.png` · `silver_vs_gold.png`
+- `allen_story.png` · `defense_vs_offense.png` · `playoff_peak.png` · `paradox_0107.png`
+- `game3_coinflip.png` · `game3_margins.png`
+
+Charts read the Phase 2 `findings_*.json` (plus a couple of CSVs for raw
+distributions) — they visualize findings, they don't recompute them.
+
 ## Reproducing the whole project
 
 - `make data` — Phase 1 data layer (scripts 01-05)
 - `make analysis` — Phase 2 analysis (scripts 10-12, 14-17, then 13)
-- `make all` — both
+- `make charts` — Phase 3 charts (scripts 20-22)
+- `make all` — all three
 
 ## Next steps
 
-1. (Phase 3, future) Charts — visualize the headline findings.
-2. (Phase 4, future) README writeup — narrative built from `findings_summary.md`.
+1. (Phase 4) README writeup — narrative built from `findings_summary.md`, embedding the 8 charts.
