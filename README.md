@@ -1,14 +1,14 @@
-# Bean Machine — anatomy of a volleyball season
+# Bean Machine: Why Did Our Volleyball Season Go the Way It Did?
 
-A data analysis of my own rec-league volleyball team's 2025-26 winter season —
-built end to end from messy, hand-collected data I gathered myself.
+A data analysis of my own volleyball team's 2025-26 season in a BB-level rec
+league. I play on the team and tracked the stats myself, by hand from game
+footage. The raw material was messy, real, and entirely self-collected.
 
 **The team:** Bean Machine, team #11 in the Mercer Island Wednesday Men's
 Volleyball League. **The season:** 10-11 in the regular season, #1 seed in the
 Silver bracket, and Silver bracket champions.
 
-This project asks one question — *why did the season go the way it did?* — and
-answers it with a reproducible pipeline that turns two chaotic spreadsheets into
+To answer it, I built a reproducible pipeline that turns two spreadsheets into
 clean data, a ranked set of findings, and the charts below.
 
 ---
@@ -145,6 +145,21 @@ That honesty surfaced real things, all documented rather than hidden:
   caught *during analysis* and fixed; the validation step now guards against it.
 
 Real franchise data looks like this. Handling it honestly is the point.
+
+---
+
+## Source data
+
+The `.xlsx` files in `data/raw/` are exports of two Google Sheets maintained
+through the season:
+
+- League schedule and scores:
+  [Google Sheet](https://docs.google.com/spreadsheets/d/1fUR2kJy3ZEeiIz9mfyUbWO2I-rPgxGcQ44nToddjqaE/edit?usp=sharing)
+- Bean Machine per-player stats:
+  [Google Sheet](https://docs.google.com/spreadsheets/d/1Mk5XCqo7_MVq0_m-4yvjRVieMh7UwWcEXsp1RCRQ-Oc/edit?usp=sharing)
+
+Game footage (the source for the player stats) is on YouTube:
+[@cadetanaka7543](https://www.youtube.com/@cadetanaka7543).
 
 ---
 
@@ -320,18 +335,3 @@ charts/           the 9 rendered figures
 Makefile          one-command reproduction of every phase
 PHASE2_NOTES.md   detailed analysis notes and decisions
 ```
-
----
-
-## Source data
-
-The `.xlsx` files in `data/raw/` are exports of two Google Sheets maintained
-through the season:
-
-- League schedule and scores —
-  [Google Sheet](https://docs.google.com/spreadsheets/d/1fUR2kJy3ZEeiIz9mfyUbWO2I-rPgxGcQ44nToddjqaE/edit?usp=sharing)
-- Bean Machine per-player stats —
-  [Google Sheet](https://docs.google.com/spreadsheets/d/1Mk5XCqo7_MVq0_m-4yvjRVieMh7UwWcEXsp1RCRQ-Oc/edit?usp=sharing)
-
-Game footage (the source for the player stats) is on YouTube:
-[@cadetanaka7543](https://www.youtube.com/@cadetanaka7543).
