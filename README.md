@@ -79,9 +79,9 @@ outside hitters who could each carry the load.
 
 **Cole.** He was the team's Swiss army knife. Over 26 games he lined up at
 libero, all three outside-hitter spots, and all three middle spots: seven
-distinct positions, far more than anyone else. He anchored the defense with a
+distinct positions. He anchored the defense with a
 team-high 61 digs. And when Tae went down injured before the playoffs, Cole
-moved permanently to the middle for the championship run. His hitting efficiency
+moved to the middle for the championship run. His hitting efficiency
 dropped from +.229 in the regular season to +.045 in the playoffs as he
 adjusted. Across the regular season our best game margins came with Cole at
 libero, but with only six games there, it's a question, not a conclusion.
