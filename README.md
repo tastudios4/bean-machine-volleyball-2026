@@ -114,16 +114,16 @@ Two source spreadsheets:
   serving, blocking, digs, serve-receive grades, across ~26 per-game tabs.
 
 **Phase 1 turns that into three clean, validated CSVs** via a five-step pipeline.
-The parser is deliberately hybrid: regex reads roughly 85% of score cells that 
-follow a recognizable pattern. Every cell it can't read confidently gets flagged 
-to `data/manual_review/` for me to fix by hand, with its original text and a best 
-guess attached. Nothing is silently dropped or quietly parsed wrong. A validation 
+The parser is deliberately hybrid: regex reads roughly 85% of score cells that
+follow a recognizable pattern. Every cell it can't read confidently gets flagged
+to `data/manual_review/` for me to fix by hand, with its original text and a best
+guess attached. Nothing is silently dropped or quietly parsed wrong. A validation
 step then cross-checks every join key and reports coverage and discrepancies.
 
 That honesty surfaced real things, all documented rather than hidden:
 
-- Our official record of 10-11 and our on-court record  of 9-11 (from the Google Sheets),
-  differ by one game. The league sheet did not record a third game, and the
+- Our official record of 10-11 and our on-court record of 9-11 (from the Google
+  Sheets) differ by one game. The league sheet did not record a third game, and the
   commissioner awarded us a win. Both views are kept in the data.
 - One game (02-18 G3) has no player stats and never will. I don't have footage.
 - A `match_id` key collision (two matches per court per week shared an ID) was
@@ -131,7 +131,7 @@ That honesty surfaced real things, all documented rather than hidden:
 
 Real franchise data looks like this. Handling it honestly is the point.
 
-#### The raw sources are public: 
+**The raw sources are public:**
 - [league score sheet](https://docs.google.com/spreadsheets/d/1fUR2kJy3ZEeiIz9mfyUbWO2I-rPgxGcQ44nToddjqaE/edit?usp=sharing)
 - [player-stats sheet](https://docs.google.com/spreadsheets/d/1Mk5XCqo7_MVq0_m-4yvjRVieMh7UwWcEXsp1RCRQ-Oc/edit?usp=sharing)
 - [game footage](https://www.youtube.com/@cadetanaka7543) the stats were logged from
@@ -141,7 +141,7 @@ Real franchise data looks like this. Handling it honestly is the point.
 ## What I found
 
 Phase 2 computes findings across three "layers": inside the team, the league
-context, and the league-format hook. Also includes deep dives on the playoffs, season
+context, and the league-format hook. It also includes deep dives on the playoffs, season
 trends, player roles, and the two worst losses. Every finding is scored on effect
 size, sample size, and narrative interest.
 The full ranked list is in
@@ -155,10 +155,10 @@ descriptions of what the data shows. Correlation is never causation.
 
 Pythagorean expectation estimates how many games a team *should* win from its
 point differential. Across the league it exposed some big gaps between luck and
-merit. Such as Volley These Balls went 11-0 on a profile worth ~7 wins (the "luckiest"
+merit. For example, Volley These Balls went 11-0 on a profile worth ~7 wins (the "luckiest"
 team), Tape Ticklers won 3 on a profile worth ~7 (the "unluckiest").
 
-As for us, Bean Machine, we were expected to win 10.05, won 10. The smallest gap of any team. Our .476 win percentage was
+As for us, Bean Machine, we were expected to win 10.05 and won 10. The smallest gap of any team. Our .476 win percentage was
 exactly what our play deserved. (Chart at the top of this doc.)
 
 ### 2. Hitting efficiency is what separated our wins from losses
@@ -181,11 +181,11 @@ thing that clearly decided sets was how well we hit.
 ### 3. Game 3 is a coin flip
 
 This is the finding only this league's format makes possible. In games 1 and 2
-the better team (by record) won ~72-74% of the time. In game 3, the same teams,
-that dropped to **53%**, barely above a coin flip. Game 3 margins
+the better team (by record) won ~72-74% of the time. In game 3, with the same
+teams on the court, it dropped to **53%**, barely above a coin flip. Game 3 margins
 were also significantly tighter (mean 3.6 points vs 5.4 and 6.1). This could
 also be explained by a time constraint of the league. The 2 teams facing off
-get 1 hour to warm up, play games 1 and 2 to 25 (win by 2), and game 3 to 15. 
+get 1 hour to warm up, play games 1 and 2 to 25 (win by 2), and game 3 to 15.
 
 ![Favored team win rate by game number](charts/game3_coinflip.png)
 
@@ -201,7 +201,7 @@ only 2 times out of ~27 and when it was 1-1, 17 times out of ~27.
 
 The most striking individual pattern. Allen's attack efficiency tracked the
 team's results almost perfectly: in the regular season he hit +.024 in sets we
-won whereas −.189 in sets we lost. A 21-point swing, the largest on the roster.
+won versus −.189 in sets we lost. A 21-point swing, the largest on the roster.
 Then in the playoffs he flipped a −.10 regular-season hit% to **+.20**. The
 player whose efficiency most mirrored the team had his best volleyball when it
 mattered most.
@@ -217,8 +217,8 @@ Our regular season showed no significant week-to-week improvement. If
 anything, set margin drifted slightly down over the seven weeks. Then the playoff
 run broke trend entirely: team hit% jumped from +.121 to +.217 (roughly 80%), digs rose
 26%, and aces rose 50%. The championship wasn't a slow build; it was a step change. The
-lineup also was finalized with Tae out due to injurt, Cole moved to middle to cover
-him and every player settled into one fixed role.
+lineup was also finalized. With Tae out due to injury, Cole moved to the middle
+to cover him, and every player settled into one fixed role.
 
 ![Team stats, regular season vs playoffs](charts/playoff_peak.png)
 
@@ -311,9 +311,9 @@ data/
   processed/      the clean CSVs, findings_*.json, and findings_summary.md
   manual_review/  score cells the parser flagged for a human
 src/
-  01–05_*.py      Phase 1 — data pipeline
-  10–17_*.py, 13  Phase 2 — analysis
-  20–22_*.py      Phase 3 — charts
+  01–05_*.py      Phase 1: data pipeline
+  10–17_*.py, 13  Phase 2: analysis
+  20–22_*.py      Phase 3: charts
   chart_style.py  shared chart styling
 charts/           the 9 rendered figures
 Makefile          one-command reproduction of every phase
