@@ -131,20 +131,12 @@ That honesty surfaced real things, all documented rather than hidden:
 
 Real franchise data looks like this. Handling it honestly is the point.
 
----
-
-## Source data
-
-The `.xlsx` files in `data/raw/` are exports of two Google Sheets maintained
-through the season:
-
-- League schedule and scores:
-  [Google Sheet](https://docs.google.com/spreadsheets/d/1fUR2kJy3ZEeiIz9mfyUbWO2I-rPgxGcQ44nToddjqaE/edit?usp=sharing)
-- Bean Machine per-player stats:
-  [Google Sheet](https://docs.google.com/spreadsheets/d/1Mk5XCqo7_MVq0_m-4yvjRVieMh7UwWcEXsp1RCRQ-Oc/edit?usp=sharing)
-
-Game footage (the source for the player stats) is on YouTube:
-[@cadetanaka7543](https://www.youtube.com/@cadetanaka7543).
+The raw sources are public: the
+[league score sheet](https://docs.google.com/spreadsheets/d/1fUR2kJy3ZEeiIz9mfyUbWO2I-rPgxGcQ44nToddjqaE/edit?usp=sharing),
+my
+[player-stats sheet](https://docs.google.com/spreadsheets/d/1Mk5XCqo7_MVq0_m-4yvjRVieMh7UwWcEXsp1RCRQ-Oc/edit?usp=sharing),
+and the [game footage](https://www.youtube.com/@cadetanaka7543) the stats were
+logged from.
 
 ---
 
