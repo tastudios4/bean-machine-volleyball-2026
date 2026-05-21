@@ -6,7 +6,7 @@ This is the curated, ranked output of Phase 2. It feeds the Phase 4 README write
 
 ## The convergence
 
-Layer 2 says Bean Machine earned every bit of their 10-11 regular season: point differential predicted 10.1 wins and they won 10 (-0.05). Layer 1 explains how the sets were decided — Bean won when they hit efficiently and held the other side down, with points-allowed (Cohen's d -1.15) the single most decisive variable. And the playoffs show what a peak looked like: team hit percentage leapt from +0.121 to +0.217 as the lineup settled into fixed roles. If you ran the season back, the one variable to chase is hitting efficiency — it tracked the team's wins all year, and it was the thing that surged when Bean won the bracket.
+Layer 2 says Bean Machine earned every bit of their 10-11 regular season: point differential predicted 10.1 wins and they won 10 (-0.05). Layer 1 explains how the sets were decided. The one factor that cleanly separated wins from losses was hitting efficiency: Bean hit +0.197 in sets they won versus +0.049 in sets they lost (Cohen's d = +0.98). And the playoffs show what a peak looked like: team hit percentage leapt from +0.121 to +0.217 as the lineup settled into fixed roles. If you ran the season back, the one variable to chase is hitting efficiency. It tracked the team's wins all year, and it surged when Bean won the bracket.
 
 ## Team context
 
@@ -70,11 +70,11 @@ Bean's team hit percentage jumped from +0.121 in the regular season to +0.217 in
 
 Average set margin was 5.43 in game 1 and 6.11 in game 2, but only 3.58 in game 3 (Welch t-tests vs G3 both significant, p<0.02). Partly the shorter cap (to 15), partly that close matches are the ones that reach a third game — but the effect is real.
 
-### 3. Defense edged offense as the decisive factor
+### 3. Hitting efficiency is what separated wins from losses
 
-*Layer 1 — inside the team*  ·  effect 4/5 · sample 3/5 · interest 3/5 · **total 10/15**
+*Layer 1 (inside the team)*  ·  effect 4/5 · sample 3/5 · interest 3/5 · **total 10/15**
 
-In set wins Bean held opponents to 15.1 points; in losses, 23.2 (Cohen's d = -1.15). Team hit percentage also separated wins from losses (d = +0.98). Both effects are large; points-allowed edges hit-percentage, so defense was (narrowly) the more decisive factor — though the honest summary is that both ends mattered.
+Splitting the regular-season sets into wins and losses, team hit percentage is the one metric with a large, non-tautological effect: +0.197 in sets Bean won versus +0.049 in sets they lost (Cohen's d = +0.98). Defense is harder to pin down honestly. Opponent points per set shows a larger raw split but is excluded as tautological (losing a set means the opponent reached the cap by definition). The non-tautological defense proxies, digs and blocks, barely move between wins and losses, and digs even runs the wrong way. The honest read: this self-tracked data measures the team's offense well and its defense poorly, and hitting was the clear separator.
 
 ### 4. Teams quietly opt out of the 'meaningless' game 3
 

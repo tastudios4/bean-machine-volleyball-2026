@@ -183,18 +183,45 @@
       "noteworthy": false
     }
   ],
-  "offense_vs_defense": {
-    "team_hit_pct_in_wins": 0.19671055086476014,
-    "team_hit_pct_in_losses": 0.04893557383476739,
-    "team_hit_pct_gap": 0.14777497702999276,
-    "team_hit_pct_cohens_d": 0.98027384180115,
-    "opp_points_in_wins": 15.11111111111111,
-    "opp_points_in_losses": 23.2,
-    "opp_points_gap": 8.088888888888889,
-    "opp_points_cohens_d": -1.151372100837355,
+  "win_loss_factors": {
     "n_wins": 9,
     "n_losses": 10,
-    "decisive": "defense (points allowed)"
+    "metrics": {
+      "team_hit_pct": {
+        "label": "team hit %",
+        "kind": "offense",
+        "mean_in_wins": 0.19671055086476014,
+        "mean_in_losses": 0.04893557383476739,
+        "cohens_d": 0.98027384180115,
+        "tautological": false
+      },
+      "digs": {
+        "label": "digs per set",
+        "kind": "defense",
+        "mean_in_wins": 11.0,
+        "mean_in_losses": 13.4,
+        "cohens_d": -0.3539281932358429,
+        "tautological": false
+      },
+      "team_blocks": {
+        "label": "blocks per set",
+        "kind": "defense",
+        "mean_in_wins": 2.4444444444444446,
+        "mean_in_losses": 1.9,
+        "cohens_d": 0.257407329038718,
+        "tautological": false
+      },
+      "bean_pts_against": {
+        "label": "opponent points",
+        "kind": "defense (tautological)",
+        "mean_in_wins": 15.11111111111111,
+        "mean_in_losses": 23.2,
+        "cohens_d": -1.151372100837355,
+        "tautological": true
+      }
+    },
+    "strongest_valid_metric": "team_hit_pct",
+    "conclusion": "Team hit % is the only metric with a large, non-tautological wins-vs-losses effect. Opponent points shows a larger raw effect but is excluded as tautological. The defense proxies (digs, blocks) are weak, and digs even runs the wrong way, so this data measures the team's offense well and its defense poorly."
   },
   "thresholds": [],
   "player_splits": {

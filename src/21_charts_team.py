@@ -3,7 +3,7 @@
 
 Team-internal charts (Phase 3):
   3. allen_story       — Allen's hit% across four contexts (the redemption arc)
-  4. defense_vs_offense — opp points & team hit% in wins vs losses
+  4. win_loss_factors — Cohen's d per metric, what separated wins from losses
   5. playoff_peak      — team hit% / digs / aces, regular season vs playoffs
   6. paradox_0107      — the 01-07 match: outscored the opponent, lost the match
   7. blowout_autopsy   — team hit% in the two worst losses vs season average
@@ -66,37 +66,46 @@ def chart_allen_story(layer1: dict, playoff: dict) -> None:
             "findings_playoff.json (n=6 playoff sets). Correlation, not causation.")
 
 
-def chart_defense_vs_offense(layer1: dict) -> None:
-    od = layer1["offense_vs_defense"]
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5.2))
+def chart_win_loss_factors(layer1: dict) -> None:
+    """Cohen's d for each candidate metric, wins vs losses. Opponent points has
+    the largest raw effect but is tautological and shown excluded; team hit %
+    is the strongest valid signal."""
+    wf = layer1["win_loss_factors"]
+    metrics = wf["metrics"]
+    # Sort by |d| so the magnitudes read top to bottom
+    order = sorted(metrics.values(), key=lambda m: abs(m["cohens_d"]))
 
-    # Left: opponent points per set (defense)
-    d_vals = [od["opp_points_in_wins"], od["opp_points_in_losses"]]
-    ax1.bar(["Bean\nwins", "Bean\nlosses"], d_vals,
-            color=[cs.GOOD, cs.BAD], edgecolor="white", width=0.55)
-    for i, v in enumerate(d_vals):
-        ax1.text(i, v + 0.4, f"{v:.1f}", ha="center", fontweight="bold")
-    ax1.set_title(f"Defense — opponent points / set\n"
-                  f"(Cohen's d = {od['opp_points_cohens_d']:+.2f})", fontsize=11)
-    ax1.set_ylabel("Opponent points per set")
-    ax1.set_ylim(0, 27)
+    fig, ax = plt.subplots(figsize=(9, 5))
+    y = range(len(order))
+    for i, m in enumerate(order):
+        taut = m["tautological"]
+        is_hit = (m["label"] == "team hit %")
+        color = cs.MUTED if taut else (cs.BEAN if is_hit else cs.NEUTRAL)
+        d = m["cohens_d"]
+        ax.barh(i, d, color=color, edgecolor="white", height=0.66,
+                hatch="//" if taut else None)
+        # d value just past the bar tip
+        ax.text(d + (0.07 if d >= 0 else -0.07), i, f"d = {d:+.2f}",
+                va="center", ha="left" if d >= 0 else "right",
+                fontsize=9.5, fontweight="bold")
+        # the tautological bar gets an "excluded" tag inside it
+        if taut:
+            ax.text(d / 2, i, "excluded: tautological", va="center", ha="center",
+                    fontsize=8.5, fontweight="bold", color="#444444",
+                    bbox=dict(boxstyle="round,pad=0.3", facecolor="white",
+                              edgecolor="none", alpha=0.9))
 
-    # Right: team hit % (offense)
-    o_vals = [od["team_hit_pct_in_wins"], od["team_hit_pct_in_losses"]]
-    ax2.bar(["Bean\nwins", "Bean\nlosses"], o_vals,
-            color=[cs.GOOD, cs.BAD], edgecolor="white", width=0.55)
-    for i, v in enumerate(o_vals):
-        ax2.text(i, v + 0.008, f"{v:+.3f}", ha="center", fontweight="bold")
-    ax2.set_title(f"Offense — team hit %\n"
-                  f"(Cohen's d = {od['team_hit_pct_cohens_d']:+.2f})", fontsize=11)
-    ax2.set_ylabel("Team hit %")
-    ax2.set_ylim(0, 0.24)
-
-    fig.suptitle("Both ends decided Bean's sets — defense by a nose",
-                 fontsize=13, fontweight="bold", y=1.02)
-    cs.save(fig, "defense_vs_offense",
-            "Source: findings_layer1.json — regular season, 9 win sets / "
-            "10 loss sets. A larger |d| means the cleaner wins-vs-losses split.")
+    ax.set_yticks(list(y))
+    ax.set_yticklabels([m["label"] for m in order])
+    ax.axvline(0, color="#999999", lw=1)
+    ax.set_xlabel("Cohen's d  (wins vs losses, per set)")
+    ax.set_xlim(-1.9, 1.9)
+    ax.set_title("What separated our wins from losses\n"
+                 "Only hitting efficiency is a strong, non-tautological signal")
+    cs.save(fig, "win_loss_factors",
+            "Source: findings_layer1.json, 19 regular-season sets (9 wins, 10 "
+            "losses). Opponent points is excluded: losing a set means the "
+            "opponent reached the cap by definition.")
 
 
 def chart_playoff_peak(playoff: dict) -> None:
@@ -217,11 +226,11 @@ def main() -> None:
     games = pd.read_csv(PROCESSED / "bean_machine_games.csv")
 
     chart_allen_story(layer1, playoff)
-    chart_defense_vs_offense(layer1)
+    chart_win_loss_factors(layer1)
     chart_playoff_peak(playoff)
     chart_paradox_0107(games)
     chart_blowout_autopsy(blowouts)
-    for name in ("allen_story", "defense_vs_offense", "playoff_peak",
+    for name in ("allen_story", "win_loss_factors", "playoff_peak",
                  "paradox_0107", "blowout_autopsy"):
         print(f"WROTE charts/{name}.png")
 

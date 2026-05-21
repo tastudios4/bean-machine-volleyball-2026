@@ -75,6 +75,11 @@ def build_set_table() -> tuple[pd.DataFrame, dict[str, Any]]:
             team_stats["sr_1"] * 1 + team_stats["sr_2"] * 2 + team_stats["sr_3"] * 3
         )
         team_stats["team_sr_average"] = sr_weighted / team_stats["sr_attempts"]
+    # Treat an unrecorded block column as 0 (not NaN) so a set with, say,
+    # assist blocks but no solo blocks still gets a real team_blocks total.
+    team_stats["team_blocks"] = (
+        team_stats["blocks_solo"].fillna(0) + team_stats["blocks_assist"].fillna(0)
+    )
 
     # Cole's position per set (for the Cole position-flex analysis)
     cole = stats_df[stats_df.player_name == "Cole"][["match_id", "game_number", "position"]]
@@ -198,42 +203,59 @@ def find_correlations(df: pd.DataFrame) -> list[dict]:
 
 
 # --------------------------------------------------------------------------- #
-# Finding-block 2: offense vs defense
+# Finding-block 2: what separated wins from losses
 # --------------------------------------------------------------------------- #
 
-def offense_vs_defense(df: pd.DataFrame) -> dict:
+def win_loss_factors(df: pd.DataFrame) -> dict:
+    """For each candidate metric, compare wins vs losses with Cohen's d.
+
+    IMPORTANT: opponent points per set is included but flagged as
+    tautological. At the set level, losing a set means the opponent reached
+    the cap by definition, so opponent points is mostly a restatement of the
+    outcome, not a measure of defense quality. It is reported for
+    transparency but excluded from the conclusion. The non-tautological
+    defense proxies are digs and blocks.
+    """
     wins = df[df.bean_won_set]
     losses = df[~df.bean_won_set]
 
-    def safe_mean(s):
-        return float(s.mean()) if len(s) else float("nan")
+    def cohens_d(col: str) -> float:
+        pooled = float(df[col].std())
+        if not pooled:
+            return 0.0
+        return (float(wins[col].mean()) - float(losses[col].mean())) / pooled
 
-    hit_w = safe_mean(wins.team_hit_pct)
-    hit_l = safe_mean(losses.team_hit_pct)
-    opp_w = safe_mean(wins.bean_pts_against)
-    opp_l = safe_mean(losses.bean_pts_against)
+    specs = [
+        ("team_hit_pct", "team hit %", "offense", False),
+        ("digs", "digs per set", "defense", False),
+        ("team_blocks", "blocks per set", "defense", False),
+        ("bean_pts_against", "opponent points", "defense (tautological)", True),
+    ]
+    metrics = {}
+    for col, label, kind, taut in specs:
+        metrics[col] = {
+            "label": label,
+            "kind": kind,
+            "mean_in_wins": float(wins[col].mean()),
+            "mean_in_losses": float(losses[col].mean()),
+            "cohens_d": cohens_d(col),
+            "tautological": taut,
+        }
 
-    # Use Cohen's d-style standardized gap so the two scales are comparable
-    pooled_hit_std = float(df.team_hit_pct.std())
-    pooled_opp_std = float(df.bean_pts_against.std())
-    hit_d = (hit_w - hit_l) / pooled_hit_std if pooled_hit_std else 0.0
-    opp_d = (opp_w - opp_l) / pooled_opp_std if pooled_opp_std else 0.0
+    valid = {k: v for k, v in metrics.items() if not v["tautological"]}
+    strongest = max(valid, key=lambda k: abs(valid[k]["cohens_d"]))
 
     return {
-        "team_hit_pct_in_wins": hit_w,
-        "team_hit_pct_in_losses": hit_l,
-        "team_hit_pct_gap": hit_w - hit_l,
-        "team_hit_pct_cohens_d": hit_d,
-        "opp_points_in_wins": opp_w,
-        "opp_points_in_losses": opp_l,
-        "opp_points_gap": opp_l - opp_w,  # bigger when defense is decisive
-        "opp_points_cohens_d": opp_d,
         "n_wins": int(len(wins)),
         "n_losses": int(len(losses)),
-        "decisive": (
-            "offense (hit %)" if abs(hit_d) > abs(opp_d)
-            else "defense (points allowed)" if abs(opp_d) > abs(hit_d)
-            else "both equally"
+        "metrics": metrics,
+        "strongest_valid_metric": strongest,
+        "conclusion": (
+            "Team hit % is the only metric with a large, non-tautological "
+            "wins-vs-losses effect. Opponent points shows a larger raw effect "
+            "but is excluded as tautological. The defense proxies (digs, "
+            "blocks) are weak, and digs even runs the wrong way, so this data "
+            "measures the team's offense well and its defense poorly."
         ),
     }
 
@@ -441,17 +463,19 @@ def main() -> None:
         mark = "*" if c["noteworthy"] else " "
         print(f"  {c['stat']:<22}{c['r']:>+8.3f}{c['p_value']:>8.3f}{c['n']:>5}  {mark}")
 
-    # 2. Offense vs defense
-    print_section("FINDING 2 — Offense vs defense")
-    od = offense_vs_defense(set_table)
-    print(f"  Team hit % — wins: {od['team_hit_pct_in_wins']:+.3f}, "
-          f"losses: {od['team_hit_pct_in_losses']:+.3f}, "
-          f"gap: {od['team_hit_pct_gap']:+.3f} (Cohen's d={od['team_hit_pct_cohens_d']:+.2f})")
-    print(f"  Opp points — wins: {od['opp_points_in_wins']:.1f}, "
-          f"losses: {od['opp_points_in_losses']:.1f}, "
-          f"gap: {od['opp_points_gap']:+.1f} (Cohen's d={od['opp_points_cohens_d']:+.2f})")
-    print(f"  n_wins={od['n_wins']}, n_losses={od['n_losses']}")
-    print(f"  DECISIVE FACTOR: {od['decisive']}")
+    # 2. What separated wins from losses
+    print_section("FINDING 2 — What separated wins from losses")
+    wf = win_loss_factors(set_table)
+    print(f"  n_wins={wf['n_wins']}, n_losses={wf['n_losses']}")
+    print(f"  {'metric':<20}{'wins':>9}{'losses':>9}{'cohen_d':>9}   note")
+    print(f"  {'-'*20}{'-'*9}{'-'*9}{'-'*9}   {'-'*24}")
+    for m in wf["metrics"].values():
+        note = "EXCLUDED: tautological" if m["tautological"] else m["kind"]
+        print(f"  {m['label']:<20}{m['mean_in_wins']:>9.3f}{m['mean_in_losses']:>9.3f}"
+              f"{m['cohens_d']:>+9.2f}   {note}")
+    strongest = wf["metrics"][wf["strongest_valid_metric"]]["label"]
+    print(f"  Strongest non-tautological factor: {strongest}")
+    print(f"  {wf['conclusion']}")
 
     # 3. Thresholds
     print_section("FINDING 3 — Threshold patterns (cleanness >= 1.8)")
@@ -518,7 +542,7 @@ def main() -> None:
                      "and only 1 usable set with both score and stats",
         },
         "stat_correlations": corrs,
-        "offense_vs_defense": od,
+        "win_loss_factors": wf,
         "thresholds": thresholds,
         "player_splits": splits,
         "allen_story": allen,

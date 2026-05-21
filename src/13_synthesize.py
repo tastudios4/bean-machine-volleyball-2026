@@ -163,20 +163,25 @@ def build_findings(data: dict) -> list[dict]:
         "effect_strength": 4, "sample_size": 3, "narrative_interest": 5,
     })
 
-    # --- Layer 1: defense edged offense ---
-    od = L1["offense_vs_defense"]
+    # --- Layer 1: hitting efficiency separated wins from losses ---
+    wf = L1["win_loss_factors"]
+    hit = wf["metrics"]["team_hit_pct"]
     f.append({
-        "title": "Defense edged offense as the decisive factor",
-        "source": "Layer 1 — inside the team",
+        "title": "Hitting efficiency is what separated wins from losses",
+        "source": "Layer 1 (inside the team)",
         "body": (
-            f"In set wins Bean held opponents to "
-            f"{od['opp_points_in_wins']:.1f} points; in losses, "
-            f"{od['opp_points_in_losses']:.1f} (Cohen's d = "
-            f"{od['opp_points_cohens_d']:+.2f}). Team hit percentage also separated "
-            f"wins from losses (d = {od['team_hit_pct_cohens_d']:+.2f}). Both effects "
-            f"are large; points-allowed edges hit-percentage, so defense was "
-            f"(narrowly) the more decisive factor — though the honest summary is "
-            f"that both ends mattered."
+            f"Splitting the regular-season sets into wins and losses, team hit "
+            f"percentage is the one metric with a large, non-tautological effect: "
+            f"{hit['mean_in_wins']:+.3f} in sets Bean won versus "
+            f"{hit['mean_in_losses']:+.3f} in sets they lost (Cohen's d = "
+            f"{hit['cohens_d']:+.2f}). Defense is harder to pin down honestly. "
+            f"Opponent points per set shows a larger raw split but is excluded as "
+            f"tautological (losing a set means the opponent reached the cap by "
+            f"definition). The non-tautological defense proxies, digs and blocks, "
+            f"barely move between wins and losses, and digs even runs the wrong "
+            f"way. The honest read: this self-tracked data measures the team's "
+            f"offense well and its defense poorly, and hitting was the clear "
+            f"separator."
         ),
         "effect_strength": 4, "sample_size": 3, "narrative_interest": 3,
     })
@@ -326,22 +331,22 @@ def build_findings(data: dict) -> list[dict]:
 def convergence_paragraph(data: dict) -> str:
     L2 = data["layer2"]
     bean = next(p for p in L2["pythagorean"] if p["team_number"] == 11)
-    od = data["layer1"]["offense_vs_defense"]
+    hitf = data["layer1"]["win_loss_factors"]["metrics"]["team_hit_pct"]
     hit = data["playoff"]["team_aggregate_comparison"]["team_hit_pct"]
     return (
         f"Layer 2 says Bean Machine earned every bit of their {bean['actual_wins']}-"
         f"{bean['actual_losses']} regular season: point differential predicted "
         f"{bean['expected_wins']:.1f} wins and they won {bean['actual_wins']} "
         f"({bean['overperformance_wins']:+.2f}). Layer 1 explains how the sets were "
-        f"decided — Bean won when they hit efficiently and held the other side "
-        f"down, with points-allowed (Cohen's d {od['opp_points_cohens_d']:+.2f}) the "
-        f"single most decisive variable. And the playoffs show what a peak looked "
-        f"like: team hit percentage leapt from "
-        f"{hit['regular_season_avg_per_set']:+.3f} to "
+        f"decided. The one factor that cleanly separated wins from losses was "
+        f"hitting efficiency: Bean hit {hitf['mean_in_wins']:+.3f} in sets they won "
+        f"versus {hitf['mean_in_losses']:+.3f} in sets they lost (Cohen's d = "
+        f"{hitf['cohens_d']:+.2f}). And the playoffs show what a peak looked like: "
+        f"team hit percentage leapt from {hit['regular_season_avg_per_set']:+.3f} to "
         f"{hit['playoff_avg_per_set']:+.3f} as the lineup settled into fixed roles. "
         f"If you ran the season back, the one variable to chase is hitting "
-        f"efficiency — it tracked the team's wins all year, and it was the thing "
-        f"that surged when Bean won the bracket."
+        f"efficiency. It tracked the team's wins all year, and it surged when Bean "
+        f"won the bracket."
     )
 
 

@@ -18,8 +18,9 @@ clean data, a ranked set of findings, and the charts below.
 - **We earned our record.** A team with our point differential "should" have won
   ~10.05 games by Pythagorean expectation. We won 10. That −0.05 gap was the
   smallest in the 15-team league — our .476 season was neither lucky nor unlucky.
-- **We won with both ends of the floor**, defense slightly ahead of offense. In
-  sets we won, we held opponents to 15 points; in sets we lost, 23.
+- **Hitting efficiency decided our sets.** We hit +.197 in the sets we won versus
+  +.049 in the sets we lost. It was the one factor that clearly separated winning
+  from losing.
 - **We peaked at exactly the right time.** Our form was flat for seven regular-
   season weeks, then team hitting efficiency jumped ~80% in the playoff run we
   went on to win.
@@ -186,15 +187,23 @@ team), Tape Ticklers won 3 on a profile worth ~7 (the unluckiest).
 Bean Machine? Expected 10.05, won 10. The smallest gap of any team. Our .476 was
 exactly what our play deserved. (Chart at the top of this README.)
 
-### 2. Defense edged offense
+### 2. Hitting efficiency is what separated our wins from losses
 
-Splitting our sets into wins and losses, both ends of the floor separated cleanly
-— but defense by a nose. In sets we won we held opponents to 15.1 points; in sets
-we lost, 23.2 (Cohen's d = −1.15). Our hitting efficiency split too (d = +0.98).
-Both effects are large; the honest summary is "both mattered, defense slightly
-more."
+I wanted to compare offense and defense head to head, but the data only honestly
+supports half of that. Hitting efficiency cleanly separated our sets: we hit
++.197 in the sets we won versus +.049 in the sets we lost, a large effect
+(Cohen's d = +0.98).
 
-![Defense vs offense in wins and losses](charts/defense_vs_offense.png)
+Defense is harder to pin down honestly. The obvious stat, opponent points per
+set, is nearly tautological: if you lose a set the opponent reached the cap by
+definition, so the loss produces the high number rather than the other way
+around. The non-tautological defense proxies I do have, digs and blocks, barely
+move between wins and losses, and digs even runs the wrong way (losing a set
+means more time spent on defense). So the honest finding is that this
+self-tracked data measures our attack well and our defense poorly, and the one
+thing that clearly decided sets was how well we hit.
+
+![What separated our wins from losses](charts/win_loss_factors.png)
 
 ### 3. Game 3 is a coin flip
 
@@ -308,9 +317,9 @@ styling helper for a consistent look.
 - **Small samples throughout.** 19 regular-season sets with complete data, 6
   playoff sets, 7 weekly points. Findings are directional, not definitive — and
   each one in `findings_summary.md` carries an explicit sample-size score.
-- **Correlation is not causation.** The Allen story, the offense/defense split,
-  and the stat correlations describe what *tracked* with winning, not what caused
-  it.
+- **Correlation is not causation.** The Allen story, the hitting-efficiency
+  finding, and the stat correlations describe what *tracked* with winning, not
+  what caused it.
 - **Pythagorean expectation** is well validated in basketball and baseball, less
   so for volleyball at the set level. It's used here as a reasonable lens.
 - **Known data gaps** are documented, not hidden: one game has no player stats,
