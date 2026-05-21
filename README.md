@@ -17,16 +17,16 @@ clean data, a ranked set of findings, and the charts below.
 
 - **We earned our record.** A team with our point differential "should" have won
   ~10.05 games by Pythagorean expectation. We won 10. That −0.05 gap was the
-  smallest in the 15-team league — our .476 season was neither lucky nor unlucky.
+  smallest in the 15-team league. Our .476 season was neither lucky nor unlucky.
 - **Hitting efficiency decided our sets.** We hit +.197 in the sets we won versus
   +.049 in the sets we lost. It was the one factor that clearly separated winning
   from losing.
-- **We peaked at exactly the right time.** Our form was flat for seven regular-
-  season weeks, then team hitting efficiency jumped ~80% in the playoff run we
-  went on to win.
-- **The league's unusual format has a measurable quirk:** because every set is
-  scored independently, a third game gets played even when the match is decided —
-  and **game 3 is close to a coin flip.**
+- **We peaked at exactly the right time.** We were a consistent team across the
+  regular season, with no real improvement week to week, then team hitting
+  efficiency jumped ~80% in the playoff run we went on to win.
+- **The league's unusual format has a measurable quirk:** due to every set being
+  scored independently, a third game gets played even when the match is decided,
+  and **game 3 is basically a coin flip.**
 
 ![Pythagorean luck across the league](charts/pythagorean_luck.png)
 
