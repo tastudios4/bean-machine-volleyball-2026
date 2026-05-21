@@ -131,37 +131,35 @@ That honesty surfaced real things, all documented rather than hidden:
 
 Real franchise data looks like this. Handling it honestly is the point.
 
-The raw sources are public: the
-[league score sheet](https://docs.google.com/spreadsheets/d/1fUR2kJy3ZEeiIz9mfyUbWO2I-rPgxGcQ44nToddjqaE/edit?usp=sharing),
-my
-[player-stats sheet](https://docs.google.com/spreadsheets/d/1Mk5XCqo7_MVq0_m-4yvjRVieMh7UwWcEXsp1RCRQ-Oc/edit?usp=sharing),
-and the [game footage](https://www.youtube.com/@cadetanaka7543) the stats were
-logged from.
+#### The raw sources are public: 
+- [league score sheet](https://docs.google.com/spreadsheets/d/1fUR2kJy3ZEeiIz9mfyUbWO2I-rPgxGcQ44nToddjqaE/edit?usp=sharing)
+- [player-stats sheet](https://docs.google.com/spreadsheets/d/1Mk5XCqo7_MVq0_m-4yvjRVieMh7UwWcEXsp1RCRQ-Oc/edit?usp=sharing)
+- [game footage](https://www.youtube.com/@cadetanaka7543) the stats were logged from
 
 ---
 
 ## What I found
 
-Phase 2 computes findings across three "layers" — inside the team, the league
-context, and the league-format hook — plus deep dives on the playoffs, season
+Phase 2 computes findings across three "layers": inside the team, the league
+context, and the league-format hook. Also includes deep dives on the playoffs, season
 trends, player roles, and the two worst losses. Every finding is scored on effect
-size, **sample size** (small samples are scored down on purpose), and narrative
-interest; the full ranked list is in
+size, sample size, and narrative interest.
+The full ranked list is in
 [`data/processed/findings_summary.md`](data/processed/findings_summary.md).
 
-A blunt caveat up front: **the samples are small** — 19 regular-season sets with
+One thing to keep in mind: **the samples are small**. 19 regular-season sets with
 complete data, 6 playoff sets, 7 weekly data points. These findings are honest
-descriptions of what the data shows, not laws. Correlation is never causation.
+descriptions of what the data shows. Correlation is never causation.
 
 ### 1. We earned our record
 
 Pythagorean expectation estimates how many games a team *should* win from its
 point differential. Across the league it exposed some big gaps between luck and
-merit — Volley These Balls went 11-0 on a profile worth ~7 wins (the luckiest
-team), Tape Ticklers won 3 on a profile worth ~7 (the unluckiest).
+merit. Such as Volley These Balls went 11-0 on a profile worth ~7 wins (the "luckiest"
+team), Tape Ticklers won 3 on a profile worth ~7 (the "unluckiest").
 
-Bean Machine? Expected 10.05, won 10. The smallest gap of any team. Our .476 was
-exactly what our play deserved. (Chart at the top of this README.)
+As for us, Bean Machine, we were expected to win 10.05, won 10. The smallest gap of any team. Our .476 win percentage was
+exactly what our play deserved. (Chart at the top of this doc.)
 
 ### 2. Hitting efficiency is what separated our wins from losses
 
