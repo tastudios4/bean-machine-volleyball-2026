@@ -122,12 +122,12 @@ step then cross-checks every join key and reports coverage and discrepancies.
 
 That honesty surfaced real things, all documented rather than hidden:
 
-- Our official record (10-11) and our on-court record (9-11 from the cells)
-  differ by one game — the league sheet under-recorded a third game, and the
+- Our official record of 10-11 and our on-court record  of 9-11 (from the Google Sheets),
+  differ by one game. The league sheet did not record a third game, and the
   commissioner awarded us a win. Both views are kept in the data.
-- One game (02-18 G3) has no player stats and never will — I don't have footage.
+- One game (02-18 G3) has no player stats and never will. I don't have footage.
 - A `match_id` key collision (two matches per court per week shared an ID) was
-  caught *during analysis* and fixed; the validation step now guards against it.
+  caught during analysis and fixed.
 
 Real franchise data looks like this. Handling it honestly is the point.
 
