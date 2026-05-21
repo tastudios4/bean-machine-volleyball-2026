@@ -268,9 +268,9 @@ make venv      # create .venv and install dependencies
 Then:
 
 ```
-make data      # Phase 1 — parse raw .xlsx into clean, validated CSVs
-make analysis  # Phase 2 — compute findings → data/processed/findings_*.json
-make charts    # Phase 3 — render the 9 charts → charts/
+make data      # Phase 1: parse raw .xlsx into clean, validated CSVs
+make analysis  # Phase 2: compute findings → data/processed/findings_*.json
+make charts    # Phase 3: render the 9 charts → charts/
 make all       # all of the above, end to end
 ```
 
@@ -290,10 +290,10 @@ styling helper for a consistent look.
 ## Honest caveats
 
 - **Small samples throughout.** 19 regular-season sets with complete data, 6
-  playoff sets, 7 weekly points. Findings are directional, not definitive — and
+  playoff sets, 7 weekly points. Findings are directional, not definitive and
   each one in `findings_summary.md` carries an explicit sample-size score.
 - **Correlation is not causation.** The Allen story, the hitting-efficiency
-  finding, and the stat correlations describe what *tracked* with winning, not
+  finding, and the stat correlations describe what tracked with winning, not
   what caused it.
 - **Pythagorean expectation** is well validated in basketball and baseball, less
   so for volleyball at the set level. It's used here as a reasonable lens.
