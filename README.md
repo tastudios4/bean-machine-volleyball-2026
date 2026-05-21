@@ -114,11 +114,11 @@ Two source spreadsheets:
   serving, blocking, digs, serve-receive grades, across ~26 per-game tabs.
 
 **Phase 1 turns that into three clean, validated CSVs** via a five-step pipeline.
-The parser is deliberately *hybrid*: regex handles the ~85% of score cells that
-follow a recognizable pattern, and anything ambiguous is written to
-`data/manual_review/` with the raw text and a best guess, rather than silently
-dropped or wrongly parsed. A validation step then cross-checks every join key and
-reports coverage and discrepancies in plain English.
+The parser is deliberately hybrid: regex reads roughly 85% of score cells that 
+follow a recognizable pattern. Every cell it can't read confidently gets flagged 
+to `data/manual_review/` for me to fix by hand, with its original text and a best 
+guess attached. Nothing is silently dropped or quietly parsed wrong. A validation 
+step then cross-checks every join key and reports coverage and discrepancies.
 
 That honesty surfaced real things, all documented rather than hidden:
 
