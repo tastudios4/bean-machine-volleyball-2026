@@ -181,9 +181,11 @@ thing that clearly decided sets was how well we hit.
 ### 3. Game 3 is a coin flip
 
 This is the finding only this league's format makes possible. In games 1 and 2
-the better team (by record) won ~72-74% of the time. In game 3 — the same teams,
-same night — that dropped to **53%**, barely above a coin flip. Game-3 margins
-were also significantly tighter (mean 3.6 points vs 5.4 and 6.1; Welch p < 0.02).
+the better team (by record) won ~72-74% of the time. In game 3, the same teams,
+that dropped to **53%**, barely above a coin flip. Game 3 margins
+were also significantly tighter (mean 3.6 points vs 5.4 and 6.1). This could
+also be explained by a time constraint of the league. The 2 teams facing off
+get 1 hour to warm up, play games 1 and 2 to 25 (win by 2), and game 3 to 15. 
 
 ![Favored team win rate by game number](charts/game3_coinflip.png)
 
@@ -192,30 +194,30 @@ were also significantly tighter (mean 3.6 points vs 5.4 and 6.1; Welch p < 0.02)
 Part of it is selection (close matches are the ones that reach a third game),
 part is the shorter cap (to 15, not 25) adding variance. And there's a behavioral
 twist: although every set officially counts for seeding, teams largely *opted out*
-of meaningless game 3s — when a match was already 2-0, a third game was played
-only 2 times out of ~27; when it was 1-1, 17 times out of ~27.
+of meaningless game 3s. When a match was already 2-0, a third game was played
+only 2 times out of ~27 and when it was 1-1, 17 times out of ~27.
 
 ### 4. The Allen story
 
 The most striking individual pattern. Allen's attack efficiency tracked the
 team's results almost perfectly: in the regular season he hit +.024 in sets we
-won versus −.189 in sets we lost — a 21-point swing, the largest on the roster.
+won whereas −.189 in sets we lost. A 21-point swing, the largest on the roster.
 Then in the playoffs he flipped a −.10 regular-season hit% to **+.20**. The
 player whose efficiency most mirrored the team had his best volleyball when it
 mattered most.
 
 ![Allen's hit % across four contexts](charts/allen_story.png)
 
-(This is correlation, not causation — the data can't say whether his swings drove
+(This is correlation, not causation. The data can't say whether his swings drove
 results or the situations drove his swings. But the pattern is real.)
 
 ### 5. We peaked for the playoffs
 
-Our regular season showed *no* significant week-to-week improvement — if
+Our regular season showed no significant week-to-week improvement. If
 anything, set margin drifted slightly down over the seven weeks. Then the playoff
-run broke trend entirely: team hit% jumped from +.121 to +.217 (~80%), digs rose
-26%, aces 50%. The championship wasn't a slow build; it was a step change. The
-lineup also crystallized — with Tae out injured, Cole moved to middle to cover
+run broke trend entirely: team hit% jumped from +.121 to +.217 (roughly 80%), digs rose
+26%, and aces rose 50%. The championship wasn't a slow build; it was a step change. The
+lineup also was finalized with Tae out due to injurt, Cole moved to middle to cover
 him and every player settled into one fixed role.
 
 ![Team stats, regular season vs playoffs](charts/playoff_peak.png)
@@ -223,8 +225,8 @@ him and every player settled into one fixed role.
 ### 6. The 01-07 paradox
 
 The single cleanest illustration of why this league scores every set
-independently. On January 7th we *lost* the match to Raw Butt Sets, one set to
-two — 24-26, 26-15, 2-6 — yet **outscored them 52-47 across the night**. One
+independently. On January 7th we lost the match to Raw Butt Sets, one set to
+two [24-26, 26-15, 2-6], yet **outscored them 52-47 across the night**. One
 blowout set win between two narrow losses. Match results and seeding genuinely
 diverge here.
 
@@ -232,12 +234,12 @@ diverge here.
 
 ### 7. Our two worst losses weren't collapses
 
-Bean's ugliest results were a 16-point loss to Sugar & Spike and a 20-point loss
-to undefeated Volley These Balls — the instinct is to call those collapses. The
-stats say otherwise. Against Sugar & Spike, our team hit% was +.163, *above* the
+Bean Machine's ugliest results were a 16-point loss to Sugar & Spike and a 20-point loss
+to undefeated Volley These Balls. The instinct is to call those collapses but the
+stats say otherwise. Against Sugar & Spike, our team hit% was +.163, above the
 season average of +.129; we played a good offensive game and were simply
 outscored by a better team. Against Volley These Balls, two of the three sets
-were within that team's normal winning margin — we hung with the league's only
+were within that team's normal winning margin. We hung with the league's only
 undefeated team for two sets before one set fell apart (and that lone collapsed
 set is the one with no player stats). We lost to elite opponents; we didn't fall
 apart.
@@ -247,8 +249,8 @@ apart.
 ### Context: the Silver bracket
 
 Winning Silver is a real result, and it's worth being honest about what it was.
-The league's two brackets reflected a true talent gap — Gold teams averaged a 67%
-win rate, Silver teams 31%. Bean Machine (.476) was the strongest team in Silver,
+The league's two brackets reflected a true talent gap. Gold teams averaged a 67%
+win rate and Silver teams 31%. Bean Machine (.476) was the strongest team in Silver,
 which is why we were the #1 seed. We won the top half of the league's lower half.
 
 ![Silver vs Gold](charts/silver_vs_gold.png)
@@ -272,15 +274,15 @@ make charts    # Phase 3 — render the 9 charts → charts/
 make all       # all of the above, end to end
 ```
 
-**Phase 1 — data layer** (`src/01`–`05`): extract spreadsheet tabs, parse the
+**Phase 1 data layer** (`src/01`–`05`): extract spreadsheet tabs, parse the
 free-text scores (hybrid regex + manual review), build the Bean-perspective
 tables, and validate every join.
 
-**Phase 2 — analysis** (`src/10`–`17`, then `13`): the three analysis layers plus
+**Phase 2 analysis** (`src/10`–`17`, then `13`): the three analysis layers plus
 the deep dives, each emitting a structured `findings_*.json`; `13_synthesize.py`
 ranks them all into `findings_summary.md`.
 
-**Phase 3 — charts** (`src/20`–`22`): the nine figures above, sharing one
+**Phase 3 charts** (`src/20`–`22`): the nine figures above, sharing one
 styling helper for a consistent look.
 
 ---
