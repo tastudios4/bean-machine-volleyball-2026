@@ -1,8 +1,8 @@
 # Bean Machine: Why Did Our Volleyball Season Go the Way It Did?
 
 A data analysis of my own volleyball team's 2025-26 season in a BB-level rec
-league. I play on the team and tracked the stats myself, by hand from game
-footage. The raw material was messy, real, and entirely self-collected.
+league. I play on the team and tracked our player stats myself, by hand from
+game footage. The raw data was messy and real.
 
 **The team:** Bean Machine, team #11 in the Mercer Island Wednesday Men's
 Volleyball League. **The season:** 10-11 in the regular season, #1 seed in the
@@ -34,36 +34,35 @@ clean data, a ranked set of findings, and the charts below.
 
 ## The project
 
-I play on Bean Machine, and I kept our stats all season. This is portfolio piece
-#2 in a move from software engineering into sports analytics — and it's
-deliberately the opposite of piece #1 (an NBA series analysis built on clean
-public API data). Here the data is messy, real, and mine: I collected most of it
-by hand from game footage.
+I play on Bean Machine, and I kept our stats all season using Google Sheets.
+Here the data is messy, real, and mine: I collected all of our player stats by
+hand from game footage.
 
-**The league format is unusual and it matters.** Fifteen teams, each match is
-best-of-three sets — but *every set counts independently* toward seeding, and
-point differential is a tiebreaker. There's no "win the match 2-0 and stop":
-teams play the third game even when it can't change who won, because the set
-itself still counts. That quirk turns out to be one of the most interesting
-things in the data (see [Game 3 is a coin flip](#3-game-3-is-a-coin-flip)).
+**The league format is unusual and it matters.** Fifteen teams. Each week, teams
+play 3 games, or 6 if they have a double-header. But *every game counts
+independently* toward seeding, and point differential is a tiebreaker. There's
+no "win the match 2-0 and stop". Teams play the third game even when it can't
+change who won, because the game itself still counts. That quirk turns out to be
+one of the most interesting things in the data (see
+[Game 3 is a coin flip](#3-game-3-is-a-coin-flip)).
 
 ---
 
 ## The roster
 
-Bean Machine ran a tight seven-player rotation all season — no deep bench;
-everyone played nearly every set available to them. Roles below are derived from
-the stats, not from the position field (which changed game to game).
+We ran a seven-player rotation all season. Everyone played nearly every game
+available. Roles below are derived from the stats, not from the position field
+(which changed game to game).
 
 | Player | Role | The numbers |
 |---|---|---|
-| **Zane** | Setter | Ran the offense — 138 assists, 74% of the team's total — and was the best server (30% of team aces) |
-| **Jeremy** | Outside hitter | Co-leading scorer — 58 kills, +.222 hit% |
-| **Andy** | Outside hitter | Co-leading scorer — 57 kills, +.203 hit%; a near-perfect mirror of Jeremy |
+| **Zane** | Setter | 138 assists (74% of the team's total); best server, 30% of team aces |
+| **Jeremy** | Outside hitter | 58 kills, +.222 hit% |
+| **Andy** | Outside hitter | 57 kills, +.203 hit%; a near-perfect mirror of Jeremy |
 | **Cole** | Utility / defensive anchor | Team-high 61 digs; played seven different positions across the season |
-| **Cade** | Middle / backup setter | The hybrid — 34 assists *and* 59 digs |
-| **Allen** | Opposite hitter | High-usage attacker — 25 kills, but a team-high 32 errors (−.062 season hit%) |
-| **Tae** | Middle blocker | Played all 20 of his sets; missed the playoffs with an injury |
+| **Cade** | Middle / backup setter | 34 assists *and* 59 digs |
+| **Allen** | Opposite hitter | 25 kills, but a team-high 32 errors (−.062 season hit%) |
+| **Tae** | Middle blocker | Played all 20 of his games; missed the playoffs with an injury |
 
 A closer look at each player:
 
