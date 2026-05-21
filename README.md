@@ -1,7 +1,7 @@
 # Bean Machine: Why Did Our Volleyball Season Go the Way It Did?
 
 A data analysis of my own volleyball team's 2025-26 season in a BB-level rec
-league. I play on the team and tracked our player stats myself, by hand from
+league. I play on the team and tracked our player stats with the help of my teammates, by hand from
 game footage. The raw data was messy and real.
 
 **The team:** Bean Machine, team #11 in the Mercer Island Wednesday Men's
