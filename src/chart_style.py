@@ -5,7 +5,7 @@ Shared matplotlib styling for the Bean Machine charts (Phase 3). Importing
 this module and calling apply_style() once gives every chart consistent
 fonts, colors, and spacing. save() writes PNGs to charts/ at a fixed DPI.
 
-Not a pipeline step (no leading number) — it's a helper imported by the
+Not a pipeline step (no leading number). It's a helper imported by the
 20-/21-/22-chart scripts.
 """
 

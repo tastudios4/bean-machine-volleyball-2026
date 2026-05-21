@@ -1,9 +1,9 @@
 """
 22_charts_game3.py
 
-Game-3 hook charts (Phase 3) — the league-format finding:
-  7. game3_coinflip — favored team's win rate by game number
-  8. game3_margins  — set-margin distribution by game number
+Game-3 hook charts (Phase 3), the league-format finding:
+  7. game3_coinflip: favored team's win rate by game number
+  8. game3_margins:  game-margin distribution by game number
 
 Reads findings_layer3.json and league_matches.csv. Writes PNGs to charts/.
 """
@@ -40,7 +40,7 @@ def chart_game3_coinflip(layer3: dict) -> None:
     bars = ax.bar(["Game 1", "Game 2", "Game 3"], fav,
                   color=colors, edgecolor="white", width=0.6)
     ax.axhline(0.5, color=cs.BAD, lw=1.5, ls="--")
-    ax.text(1.5, 0.535, "coin flip — 50%", color=cs.BAD, fontsize=9,
+    ax.text(1.5, 0.535, "coin flip (50%)", color=cs.BAD, fontsize=9,
             ha="center", va="bottom", fontweight="bold")
 
     for bar, v, n in zip(bars, fav, ns):
@@ -52,9 +52,9 @@ def chart_game3_coinflip(layer3: dict) -> None:
     ax.set_ylim(0, 0.85)
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0%}"))
     ax.set_title("Game 3 is a coin flip\n"
-                 "The favored team wins games 1 and 2 — but not game 3")
+                 "The favored team wins games 1 and 2, but not game 3")
     cs.save(fig, "game3_coinflip",
-            "Source: findings_layer3.json — favored team by season win %. "
+            "Source: findings_layer3.json. Favored team by season win %. "
             "Regular season; the upset rate nearly doubles in game 3.")
 
 
@@ -91,13 +91,13 @@ def chart_game3_margins(layer3: dict) -> None:
         ax.text(i + 0.32, mean, f"mean {mean:.1f}\n(n={len(vals)})",
                 va="center", fontsize=8.5, color=cs.INK)
 
-    ax.set_ylabel("Set margin (points)")
+    ax.set_ylabel("Game margin (points)")
     ax.set_title("Game 3 is played closer\n"
-                 "Set margins shrink significantly in the third game")
+                 "Game margins shrink significantly in the third game")
     ax.text(0.62, 14, "Game 3 vs games 1 & 2:\nWelch t-test  p < 0.02",
             ha="left", va="center", fontsize=8.5, color=cs.SUBTLE, style="italic")
     cs.save(fig, "game3_margins",
-            "Source: league_matches.csv — every regular-season set with a "
+            "Source: league_matches.csv. Every regular-season game with a "
             "complete score. Diamond = mean, line = median.")
 
 

@@ -2,8 +2,8 @@
 20_charts_league.py
 
 League-context charts (Phase 3):
-  1. pythagorean_luck   — actual vs Pythagorean-expected wins, all 15 teams
-  2. silver_vs_gold     — per-team win% by bracket, Bean Machine highlighted
+  1. pythagorean_luck:  actual vs Pythagorean-expected wins, all 15 teams
+  2. silver_vs_gold:    per-team win% by bracket, Bean Machine highlighted
 
 Reads data/processed/findings_layer2.json and data/processed/league_standings.csv.
 Writes PNGs to charts/.
@@ -76,7 +76,7 @@ def chart_pythagorean(layer2: dict) -> None:
 
     ax.set_xlabel("Wins above / below Pythagorean expectation")
     ax.set_title("Luck in the standings: who the point differential says\n"
-                 "should have won more — and who actually did")
+                 "should have won more, and who actually did")
     ax.set_xlim(-5.2, 5.2)
     # Legend via proxy patches
     import matplotlib.patches as mpatches
@@ -88,7 +88,7 @@ def chart_pythagorean(layer2: dict) -> None:
     ax.legend(handles=handles, loc="lower right")
 
     cs.save(fig, "pythagorean_luck",
-            "Source: findings_layer2.json — Pythagorean expectation (exponent 2) "
+            "Source: findings_layer2.json. Pythagorean expectation (exponent 2) "
             "vs actual wins, all 15 teams.")
 
 
@@ -115,7 +115,7 @@ def chart_silver_vs_gold(layer2: dict) -> None:
                 zorder=3 if is_bean else 2,
             )
             if is_bean:
-                ax.annotate("Bean Machine\n(.476 — top of Silver)",
+                ax.annotate("Bean Machine\n(.476, top of Silver)",
                             (x + offset, row.win_pct),
                             textcoords="offset points", xytext=(14, 0),
                             va="center", fontsize=9, fontweight="bold",

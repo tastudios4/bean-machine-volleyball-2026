@@ -210,10 +210,10 @@ def win_loss_factors(df: pd.DataFrame) -> dict:
     """For each candidate metric, compare wins vs losses with Cohen's d.
 
     IMPORTANT: opponent points per set is included but flagged as
-    tautological. At the set level, losing a set means the opponent reached
+    redundant. At the set level, losing a set means the opponent reached
     the cap by definition, so opponent points is mostly a restatement of the
     outcome, not a measure of defense quality. It is reported for
-    transparency but excluded from the conclusion. The non-tautological
+    transparency but excluded from the conclusion. The non-redundant
     defense proxies are digs and blocks.
     """
     wins = df[df.bean_won_set]
@@ -229,7 +229,7 @@ def win_loss_factors(df: pd.DataFrame) -> dict:
         ("team_hit_pct", "team hit %", "offense", False),
         ("digs", "digs per set", "defense", False),
         ("team_blocks", "blocks per set", "defense", False),
-        ("bean_pts_against", "opponent points", "defense (tautological)", True),
+        ("bean_pts_against", "opponent points", "defense (redundant)", True),
     ]
     metrics = {}
     for col, label, kind, taut in specs:
@@ -239,10 +239,10 @@ def win_loss_factors(df: pd.DataFrame) -> dict:
             "mean_in_wins": float(wins[col].mean()),
             "mean_in_losses": float(losses[col].mean()),
             "cohens_d": cohens_d(col),
-            "tautological": taut,
+            "redundant": taut,
         }
 
-    valid = {k: v for k, v in metrics.items() if not v["tautological"]}
+    valid = {k: v for k, v in metrics.items() if not v["redundant"]}
     strongest = max(valid, key=lambda k: abs(valid[k]["cohens_d"]))
 
     return {
@@ -251,9 +251,9 @@ def win_loss_factors(df: pd.DataFrame) -> dict:
         "metrics": metrics,
         "strongest_valid_metric": strongest,
         "conclusion": (
-            "Team hit % is the only metric with a large, non-tautological "
+            "Team hit % is the only metric with a large, non-redundant "
             "wins-vs-losses effect. Opponent points shows a larger raw effect "
-            "but is excluded as tautological. The defense proxies (digs, "
+            "but is excluded as redundant. The defense proxies (digs, "
             "blocks) are weak, and digs even runs the wrong way, so this data "
             "measures the team's offense well and its defense poorly."
         ),
@@ -470,11 +470,11 @@ def main() -> None:
     print(f"  {'metric':<20}{'wins':>9}{'losses':>9}{'cohen_d':>9}   note")
     print(f"  {'-'*20}{'-'*9}{'-'*9}{'-'*9}   {'-'*24}")
     for m in wf["metrics"].values():
-        note = "EXCLUDED: tautological" if m["tautological"] else m["kind"]
+        note = "EXCLUDED: redundant" if m["redundant"] else m["kind"]
         print(f"  {m['label']:<20}{m['mean_in_wins']:>9.3f}{m['mean_in_losses']:>9.3f}"
               f"{m['cohens_d']:>+9.2f}   {note}")
     strongest = wf["metrics"][wf["strongest_valid_metric"]]["label"]
-    print(f"  Strongest non-tautological factor: {strongest}")
+    print(f"  Strongest non-redundant factor: {strongest}")
     print(f"  {wf['conclusion']}")
 
     # 3. Thresholds

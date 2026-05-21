@@ -1,6 +1,6 @@
 # Bean Machine 2025-26 — Phase 2 Findings Summary
 
-_Generated 2026-05-20 by `13_synthesize.py` from the seven `findings_*.json` files._
+_Generated 2026-05-21 by `13_synthesize.py` from the seven `findings_*.json` files._
 
 This is the curated, ranked output of Phase 2. It feeds the Phase 4 README writeup. Each finding is scored 1-5 on **effect strength**, **sample size** (small samples score low — honest by design), and **narrative interest**.
 
@@ -74,7 +74,7 @@ Average set margin was 5.43 in game 1 and 6.11 in game 2, but only 3.58 in game 
 
 *Layer 1 (inside the team)*  ·  effect 4/5 · sample 3/5 · interest 3/5 · **total 10/15**
 
-Splitting the regular-season sets into wins and losses, team hit percentage is the one metric with a large, non-tautological effect: +0.197 in sets Bean won versus +0.049 in sets they lost (Cohen's d = +0.98). Defense is harder to pin down honestly. Opponent points per set shows a larger raw split but is excluded as tautological (losing a set means the opponent reached the cap by definition). The non-tautological defense proxies, digs and blocks, barely move between wins and losses, and digs even runs the wrong way. The honest read: this self-tracked data measures the team's offense well and its defense poorly, and hitting was the clear separator.
+Splitting the regular-season sets into wins and losses, team hit percentage is the one metric with a large, non-redundant effect: +0.197 in sets Bean won versus +0.049 in sets they lost (Cohen's d = +0.98). Defense is harder to pin down honestly. Opponent points per set shows a larger raw split but is excluded as redundant (losing a set means the opponent reached the cap by definition). The non-redundant defense proxies, digs and blocks, barely move between wins and losses, and digs even runs the wrong way. The honest read: this self-tracked data measures the team's offense well and its defense poorly, and hitting was the clear separator.
 
 ### 4. Teams quietly opt out of the 'meaningless' game 3
 

@@ -2,11 +2,11 @@
 21_charts_team.py
 
 Team-internal charts (Phase 3):
-  3. allen_story       — Allen's hit% across four contexts (the redemption arc)
-  4. win_loss_factors — Cohen's d per metric, what separated wins from losses
-  5. playoff_peak      — team hit% / digs / aces, regular season vs playoffs
-  6. paradox_0107      — the 01-07 match: outscored the opponent, lost the match
-  7. blowout_autopsy   — team hit% in the two worst losses vs season average
+  3. allen_story:      Allen's hit% across four contexts (the redemption arc)
+  4. win_loss_factors: Cohen's d per metric, what separated wins from losses
+  5. playoff_peak:     team hit% / digs / aces, regular season vs playoffs
+  6. paradox_0107:     the 01-07 match: outscored the opponent, lost the match
+  7. blowout_autopsy:  team hit% in the two worst losses vs season average
 
 Reads findings_layer1.json, findings_playoff.json, findings_blowouts.json,
 and bean_machine_games.csv. Writes PNGs to charts/.
@@ -37,7 +37,8 @@ def chart_allen_story(layer1: dict, playoff: dict) -> None:
     allen = layer1["allen_story"]
     allen_po = playoff["player_comparison"]["Allen"]
 
-    labels = ["In Bean\nlosses", "Season\noverall", "In Bean\nwins", "In the\nplayoffs"]
+    labels = ["In Bean Machine\nlosses", "Season\noverall", "In Bean Machine\nwins",
+              "In the\nplayoffs"]
     values = [
         allen["season_hit_pct_in_losses"],
         allen["season_hit_pct_all_sets"],
@@ -60,7 +61,7 @@ def chart_allen_story(layer1: dict, playoff: dict) -> None:
     ax.set_ylabel("Allen's attack hit %")
     ax.set_ylim(-0.26, 0.27)
     ax.set_title("The Allen story: a hitter whose efficiency\n"
-                 "tracked the team — and peaked in the playoffs")
+                 "tracked the team, then peaked in the playoffs")
     cs.save(fig, "allen_story",
             "Source: findings_layer1.json (regular season, n=19 sets) + "
             "findings_playoff.json (n=6 playoff sets). Correlation, not causation.")
@@ -68,7 +69,7 @@ def chart_allen_story(layer1: dict, playoff: dict) -> None:
 
 def chart_win_loss_factors(layer1: dict) -> None:
     """Cohen's d for each candidate metric, wins vs losses. Opponent points has
-    the largest raw effect but is tautological and shown excluded; team hit %
+    the largest raw effect but is redundant and shown excluded; team hit %
     is the strongest valid signal."""
     wf = layer1["win_loss_factors"]
     metrics = wf["metrics"]
@@ -78,7 +79,7 @@ def chart_win_loss_factors(layer1: dict) -> None:
     fig, ax = plt.subplots(figsize=(9, 5))
     y = range(len(order))
     for i, m in enumerate(order):
-        taut = m["tautological"]
+        taut = m["redundant"]
         is_hit = (m["label"] == "team hit %")
         color = cs.MUTED if taut else (cs.BEAN if is_hit else cs.NEUTRAL)
         d = m["cohens_d"]
@@ -88,9 +89,9 @@ def chart_win_loss_factors(layer1: dict) -> None:
         ax.text(d + (0.07 if d >= 0 else -0.07), i, f"d = {d:+.2f}",
                 va="center", ha="left" if d >= 0 else "right",
                 fontsize=9.5, fontweight="bold")
-        # the tautological bar gets an "excluded" tag inside it
+        # the redundant bar gets an "excluded" tag inside it
         if taut:
-            ax.text(d / 2, i, "excluded: tautological", va="center", ha="center",
+            ax.text(d / 2, i, "excluded: redundant", va="center", ha="center",
                     fontsize=8.5, fontweight="bold", color="#444444",
                     bbox=dict(boxstyle="round,pad=0.3", facecolor="white",
                               edgecolor="none", alpha=0.9))
@@ -101,7 +102,7 @@ def chart_win_loss_factors(layer1: dict) -> None:
     ax.set_xlabel("Cohen's d  (wins vs losses, per set)")
     ax.set_xlim(-1.9, 1.9)
     ax.set_title("What separated our wins from losses\n"
-                 "Only hitting efficiency is a strong, non-tautological signal")
+                 "Only hitting efficiency is a strong, non-redundant signal")
     cs.save(fig, "win_loss_factors",
             "Source: findings_layer1.json, 19 regular-season sets (9 wins, 10 "
             "losses). Opponent points is excluded: losing a set means the "
@@ -131,8 +132,8 @@ def chart_playoff_peak(playoff: dict) -> None:
     fig.suptitle("Bean Machine peaked for the playoff run",
                  fontsize=13, fontweight="bold", y=1.04)
     cs.save(fig, "playoff_peak",
-            "Source: findings_playoff.json — per-set averages, 20 regular-season "
-            "sets vs 6 playoff sets. Small playoff sample; magnitudes are large.")
+            "Source: findings_playoff.json. Per-set averages, 20 regular-season "
+            "games vs 6 playoff games. Small playoff sample; magnitudes are large.")
 
 
 def chart_paradox_0107(games: pd.DataFrame) -> None:
@@ -156,29 +157,29 @@ def chart_paradox_0107(games: pd.DataFrame) -> None:
                     fontsize=10)
 
     ax.set_xticks(list(x))
-    ax.set_xticklabels(["Game 1\n(Bean lost)", "Game 2\n(Bean won)",
-                        "Game 3\n(Bean lost)"])
+    ax.set_xticklabels(["Game 1\n(Bean Machine lost)", "Game 2\n(Bean Machine won)",
+                        "Game 3\n(Bean Machine lost)"])
     ax.set_ylabel("Points scored")
     ax.set_ylim(0, 35)
     ax.legend(loc="upper right")
-    ax.set_title("The 01-07 paradox: Bean outscored the opponent\n"
-                 "across the match — and still lost it")
+    ax.set_title("The 01-07 paradox: Bean Machine outscored the opponent\n"
+                 "across the match, yet still lost it")
 
     bean_total, opp_total = int(sum(bean)), int(sum(opp))
     ax.text(0.5, 31.5,
-            f"Match total:  Bean Machine {bean_total}  —  {opp_name} {opp_total}\n"
-            f"Bean +{bean_total - opp_total} on points — but lost the match, 1 set to 2",
+            f"Match total:  Bean Machine {bean_total}, {opp_name} {opp_total}\n"
+            f"Bean Machine +{bean_total - opp_total} on points, but lost the match 1 game to 2",
             ha="center", va="center", fontsize=9.5, fontweight="bold", color=cs.INK,
             bbox=dict(boxstyle="round,pad=0.5", facecolor="#f4f4f4",
                       edgecolor="#cccccc"))
     cs.save(fig, "paradox_0107",
-            "Source: bean_machine_games.csv — 2026-01-07 vs Raw Butt Sets. "
-            "Every set is scored independently for seeding in this league.")
+            "Source: bean_machine_games.csv. 2026-01-07 vs Raw Butt Sets. "
+            "Every game is scored independently for seeding in this league.")
 
 
 def chart_blowout_autopsy(blowouts: dict) -> None:
-    """Bean's team hit% in each of the two worst losses vs the season average.
-    A collapse would crash well below the line — neither loss did."""
+    """Bean Machine's team hit% in each of the two worst losses vs the season
+    average. A collapse would crash well below the line; neither loss did."""
     bl = {b["date"]: b for b in blowouts["blowouts"]}
     ss = bl["2026-01-21"]   # Sugar & Spike, lost by 16
     vtb = bl["2026-02-18"]  # Volley These Balls, lost by 20
@@ -206,15 +207,15 @@ def chart_blowout_autopsy(blowouts: dict) -> None:
     ax.set_ylim(0, 0.23)
     ax.text(0.5, 0.205,
             "Sugar & Spike: hitting ABOVE the season average.\n"
-            "Volley These Balls: normal — only 0.021 below.\n"
+            "Volley These Balls: normal, only 0.021 below.\n"
             "A genuine collapse would fall far below the line.",
             ha="center", va="center", fontsize=9,
             bbox=dict(boxstyle="round,pad=0.5", facecolor="#f4f4f4",
                       edgecolor="#cccccc"))
-    ax.set_title("Bean's two worst losses weren't collapses\n"
+    ax.set_title("Bean Machine's two worst losses weren't collapses\n"
                  "Team hitting held its season form in both")
     cs.save(fig, "blowout_autopsy",
-            "Source: findings_blowouts.json — Bean's team hit % in each loss "
+            "Source: findings_blowouts.json. Bean Machine's team hit % in each loss "
             "vs the season average. A genuine collapse would fall far below the line.")
 
 

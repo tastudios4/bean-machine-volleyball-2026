@@ -193,7 +193,7 @@
         "mean_in_wins": 0.19671055086476014,
         "mean_in_losses": 0.04893557383476739,
         "cohens_d": 0.98027384180115,
-        "tautological": false
+        "redundant": false
       },
       "digs": {
         "label": "digs per set",
@@ -201,7 +201,7 @@
         "mean_in_wins": 11.0,
         "mean_in_losses": 13.4,
         "cohens_d": -0.3539281932358429,
-        "tautological": false
+        "redundant": false
       },
       "team_blocks": {
         "label": "blocks per set",
@@ -209,19 +209,19 @@
         "mean_in_wins": 2.4444444444444446,
         "mean_in_losses": 1.9,
         "cohens_d": 0.257407329038718,
-        "tautological": false
+        "redundant": false
       },
       "bean_pts_against": {
         "label": "opponent points",
-        "kind": "defense (tautological)",
+        "kind": "defense (redundant)",
         "mean_in_wins": 15.11111111111111,
         "mean_in_losses": 23.2,
         "cohens_d": -1.151372100837355,
-        "tautological": true
+        "redundant": true
       }
     },
     "strongest_valid_metric": "team_hit_pct",
-    "conclusion": "Team hit % is the only metric with a large, non-tautological wins-vs-losses effect. Opponent points shows a larger raw effect but is excluded as tautological. The defense proxies (digs, blocks) are weak, and digs even runs the wrong way, so this data measures the team's offense well and its defense poorly."
+    "conclusion": "Team hit % is the only metric with a large, non-redundant wins-vs-losses effect. Opponent points shows a larger raw effect but is excluded as redundant. The defense proxies (digs, blocks) are weak, and digs even runs the wrong way, so this data measures the team's offense well and its defense poorly."
   },
   "thresholds": [],
   "player_splits": {

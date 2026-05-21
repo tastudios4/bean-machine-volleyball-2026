@@ -171,13 +171,13 @@ def build_findings(data: dict) -> list[dict]:
         "source": "Layer 1 (inside the team)",
         "body": (
             f"Splitting the regular-season sets into wins and losses, team hit "
-            f"percentage is the one metric with a large, non-tautological effect: "
+            f"percentage is the one metric with a large, non-redundant effect: "
             f"{hit['mean_in_wins']:+.3f} in sets Bean won versus "
             f"{hit['mean_in_losses']:+.3f} in sets they lost (Cohen's d = "
             f"{hit['cohens_d']:+.2f}). Defense is harder to pin down honestly. "
             f"Opponent points per set shows a larger raw split but is excluded as "
-            f"tautological (losing a set means the opponent reached the cap by "
-            f"definition). The non-tautological defense proxies, digs and blocks, "
+            f"redundant (losing a set means the opponent reached the cap by "
+            f"definition). The non-redundant defense proxies, digs and blocks, "
             f"barely move between wins and losses, and digs even runs the wrong "
             f"way. The honest read: this self-tracked data measures the team's "
             f"offense well and its defense poorly, and hitting was the clear "

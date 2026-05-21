@@ -74,7 +74,7 @@ He was also the team's most dangerous server, with a team-high 12 aces.
 high-volume hitter (+.222 hit%), the most reliable point of attack.
 
 **Andy.** His stat line is almost a carbon copy of Jeremy's: 57 kills, +.203
-hit%. Bean's offense wasn't built around one star. It was two near-identical
+hit%. Bean Machine's offense wasn't built around one star. It was two near-identical
 outside hitters who could each carry the load.
 
 **Cole.** He was the team's Swiss army knife. Over 26 games he lined up at
@@ -275,8 +275,8 @@ make all       # all of the above, end to end
 ```
 
 **Phase 1 data layer** (`src/01`–`05`): extract spreadsheet tabs, parse the
-free-text scores (hybrid regex + manual review), build the Bean-perspective
-tables, and validate every join.
+free-text scores (hybrid regex + manual review), build the Bean Machine tables,
+and validate every join.
 
 **Phase 2 analysis** (`src/10`–`17`, then `13`): the three analysis layers plus
 the deep dives, each emitting a structured `findings_*.json`; `13_synthesize.py`
