@@ -79,6 +79,19 @@ team won Silver anyway. (One soft signal, too small to lean on: across the
 regular season our best set margins came with Cole at libero — but with only six
 sets there, it's a question, not a conclusion.)
 
+**The Cade story.** Cade is the second-shortest player on the team — and he led
+it in blocks, with 21 (only Zane, at 17, was close; no one else reached double
+digits). Blocking is supposed to be a reach-over-the-net height skill; Cade does
+it on timing and reading instead. He was also the team's best passer (top
+serve-receive average), second in digs, and second in assists as the backup
+setter — the best ball-control player on the roster and the most genuinely
+all-around. What he is *not* is the top scorer: in kills and hitting efficiency
+he sits mid-pack, behind Jeremy and Andy. That gap is the point. Volleyball box
+scores reward kills and bury blocking, passing, and setting, so the most complete
+player on the team doesn't look like it in a headline stat line — the eye test
+and the box score genuinely disagree, and here the eye test is seeing something
+real.
+
 ---
 
 ## The data — and why it was the hard part
