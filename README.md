@@ -101,16 +101,16 @@ playoff lineup (see [We peaked for the playoffs](#5-we-peaked-for-the-playoffs))
 
 ---
 
-## The data — and why it was the hard part
+## The data and why it was the hard part
 
 The analysis is only as good as the data under it, and the data started rough.
 Two source spreadsheets:
 
-- **`league_raw.xlsx`** — every team's schedule and scores. Scores were typed as
+- **`league_raw.xlsx`**: every team's schedule and scores. Scores were typed as
   free text by whoever was running the night, with no fixed format:
   `"11 win, 17-25, 25-20, 14-15"`, `"(8 win) 25-19, 25-15"`, `"11w,17-25,..."`,
   `"Tie: 25-20, 20-25"`, `"Both teams won 1 set, no time for third"`.
-- **`player_stats_raw.xlsx`** — my own per-player, per-set tracking: attack,
+- **`player_stats_raw.xlsx`**: my own per-player, per-game tracking: attack,
   serving, blocking, digs, serve-receive grades, across ~26 per-game tabs.
 
 **Phase 1 turns that into three clean, validated CSVs** via a five-step pipeline.
