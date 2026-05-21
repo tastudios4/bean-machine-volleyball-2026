@@ -64,33 +64,55 @@ the stats, not from the position field (which changed game to game).
 | **Allen** | Opposite hitter | High-usage attacker — 25 kills, but a team-high 32 errors (−.062 season hit%) |
 | **Tae** | Middle blocker | Played all 20 of his sets; missed the playoffs with an injury |
 
-Jeremy and Andy were a genuinely balanced two-headed attack — 58 and 57 kills,
-+.222 and +.203 efficiency, accounting for over half the team's offense between
-them. Zane ran everything from the setter spot.
+A closer look at each player:
 
-**The Cole story.** Cole was the team's Swiss army knife. Over 26 sets he lined
-up at libero, all three outside-hitter spots, *and* all three middle spots —
-seven distinct positions, far more than anyone else. He anchored the defense with
-a team-high 61 digs. And when Tae went down injured before the playoffs, Cole
-moved permanently to the middle for the championship run — covering a position
-that wasn't his, and taking a personal hit for it: his hitting efficiency dropped
-from +.229 in the regular season to +.045 in the playoffs as he adjusted. The
-team won Silver anyway. (One soft signal, too small to lean on: across the
-regular season our best set margins came with Cole at libero — but with only six
-sets there, it's a question, not a conclusion.)
+**Zane — the engine.** Every Bean possession ran through Zane. He recorded 138
+assists — 74% of the team's total — and barely touched the error column: one
+attack error all season. He was also the team's most dangerous server, with a
+team-high 12 aces.
 
-**The Cade story.** Cade is the second-shortest player on the team — and he led
-it in blocks, with 21 (only Zane, at 17, was close; no one else reached double
-digits). Blocking is supposed to be a reach-over-the-net height skill; Cade does
-it on timing and reading instead. He was also the team's best passer (top
-serve-receive average), second in digs, and second in assists as the backup
-setter — the best ball-control player on the roster and the most genuinely
+**Jeremy — the efficient scorer.** Jeremy led the team in kills (58) at the best
+efficiency of any high-volume hitter (+.222 hit%) — the most reliable point of
+attack.
+
+**Andy — the other half of the attack.** Andy's stat line is almost a carbon copy
+of Jeremy's: 57 kills, +.203 hit%. Bean's offense wasn't built around one star —
+it was two near-identical outside hitters who could each carry the load.
+
+**Cole — the utility man.** Cole was the team's Swiss army knife. Over 26 sets he
+lined up at libero, all three outside-hitter spots, *and* all three middle spots
+— seven distinct positions, far more than anyone else. He anchored the defense
+with a team-high 61 digs. And when Tae went down injured before the playoffs,
+Cole moved permanently to the middle for the championship run — covering a
+position that wasn't his, and taking a personal hit for it: his hitting
+efficiency dropped from +.229 in the regular season to +.045 in the playoffs as
+he adjusted. The team won Silver anyway. (One soft signal, too small to lean on:
+across the regular season our best set margins came with Cole at libero — but
+with only six sets there, it's a question, not a conclusion.)
+
+**Cade — the all-around player.** Cade is the second-shortest player on the team
+— and he led it in blocks, with 21 (only Zane, at 17, was close; no one else
+reached double digits). Blocking is supposed to be a reach-over-the-net height
+skill; Cade does it on timing and reading instead. He was also the team's best
+passer (top serve-receive average), second in digs, and second in assists as the
+backup setter — the best ball-control player on the roster and the most genuinely
 all-around. What he is *not* is the top scorer: in kills and hitting efficiency
 he sits mid-pack, behind Jeremy and Andy. That gap is the point. Volleyball box
 scores reward kills and bury blocking, passing, and setting, so the most complete
 player on the team doesn't look like it in a headline stat line — the eye test
 and the box score genuinely disagree, and here the eye test is seeing something
 real.
+
+**Allen — the high-usage opposite.** Allen took a heavy share of the swings, and
+his efficiency rose and fell with the team's results all season — the clearest
+individual pattern in the data (see [The Allen story](#4-the-allen-story)). A
+team-high 32 attack errors in the regular season, then a sharp turnaround in the
+playoffs.
+
+**Tae — the middle blocker.** Tae played every one of the 20 sets available to
+him in the regular season, then missed the entire playoff run with an injury. His
+absence reshaped the championship lineup (see
+[We peaked for the playoffs](#5-we-peaked-for-the-playoffs)).
 
 ---
 
@@ -211,6 +233,20 @@ diverge here.
 
 ![The 01-07 paradox](charts/paradox_0107.png)
 
+### 7. Our two worst losses weren't collapses
+
+Bean's ugliest results were a 16-point loss to Sugar & Spike and a 20-point loss
+to undefeated Volley These Balls — the instinct is to call those collapses. The
+stats say otherwise. Against Sugar & Spike, our team hit% was +.163, *above* the
+season average of +.129; we played a good offensive game and were simply
+outscored by a better team. Against Volley These Balls, two of the three sets
+were within that team's normal winning margin — we hung with the league's only
+undefeated team for two sets before one set fell apart (and that lone collapsed
+set is the one with no player stats). We lost to elite opponents; we didn't fall
+apart.
+
+![Team hit % in the two worst losses vs the season average](charts/blowout_autopsy.png)
+
 ### Context: the Silver bracket
 
 Winning Silver is a real result, and it's worth being honest about what it was.
@@ -235,7 +271,7 @@ Then:
 ```
 make data      # Phase 1 — parse raw .xlsx into clean, validated CSVs
 make analysis  # Phase 2 — compute findings → data/processed/findings_*.json
-make charts    # Phase 3 — render the 8 charts → charts/
+make charts    # Phase 3 — render the 9 charts → charts/
 make all       # all of the above, end to end
 ```
 
@@ -247,7 +283,7 @@ tables, and validate every join.
 the deep dives, each emitting a structured `findings_*.json`; `13_synthesize.py`
 ranks them all into `findings_summary.md`.
 
-**Phase 3 — charts** (`src/20`–`22`): the eight figures above, sharing one
+**Phase 3 — charts** (`src/20`–`22`): the nine figures above, sharing one
 styling helper for a consistent look.
 
 ---
@@ -280,7 +316,7 @@ src/
   10–17_*.py, 13  Phase 2 — analysis
   20–22_*.py      Phase 3 — charts
   chart_style.py  shared chart styling
-charts/           the 8 rendered figures
+charts/           the 9 rendered figures
 Makefile          one-command reproduction of every phase
 PHASE2_NOTES.md   detailed analysis notes and decisions
 ```

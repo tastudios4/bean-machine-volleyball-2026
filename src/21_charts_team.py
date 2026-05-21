@@ -6,9 +6,10 @@ Team-internal charts (Phase 3):
   4. defense_vs_offense — opp points & team hit% in wins vs losses
   5. playoff_peak      — team hit% / digs / aces, regular season vs playoffs
   6. paradox_0107      — the 01-07 match: outscored the opponent, lost the match
+  7. blowout_autopsy   — team hit% in the two worst losses vs season average
 
-Reads findings_layer1.json, findings_playoff.json, and bean_machine_games.csv.
-Writes PNGs to charts/.
+Reads findings_layer1.json, findings_playoff.json, findings_blowouts.json,
+and bean_machine_games.csv. Writes PNGs to charts/.
 """
 
 from __future__ import annotations
@@ -166,17 +167,62 @@ def chart_paradox_0107(games: pd.DataFrame) -> None:
             "Every set is scored independently for seeding in this league.")
 
 
+def chart_blowout_autopsy(blowouts: dict) -> None:
+    """Bean's team hit% in each of the two worst losses vs the season average.
+    A collapse would crash well below the line — neither loss did."""
+    bl = {b["date"]: b for b in blowouts["blowouts"]}
+    ss = bl["2026-01-21"]   # Sugar & Spike, lost by 16
+    vtb = bl["2026-02-18"]  # Volley These Balls, lost by 20
+    season = ss["team_hit_pct_season"]
+
+    rows = [
+        ("Sugar & Spike\n(lost by 16)", ss["team_hit_pct_match"], cs.BEAN),
+        ("Volley These Balls\n(lost by 20)", vtb["team_hit_pct_match"], cs.NEUTRAL),
+    ]
+    fig, ax = plt.subplots(figsize=(8, 5.5))
+    labels = [r[0] for r in rows]
+    vals = [r[1] for r in rows]
+    colors = [r[2] for r in rows]
+    bars = ax.bar(labels, vals, color=colors, edgecolor="white", width=0.5)
+
+    ax.axhline(season, color=cs.INK, lw=1.5, ls="--")
+    ax.text(-0.46, season + 0.004, f"season average  ({season:+.3f})",
+            ha="left", va="bottom", fontsize=9, fontweight="bold")
+
+    for bar, v in zip(bars, vals):
+        ax.text(bar.get_x() + bar.get_width() / 2, v + 0.006, f"{v:+.3f}",
+                ha="center", va="bottom", fontsize=12, fontweight="bold")
+
+    ax.set_ylabel("Bean Machine team hit %")
+    ax.set_ylim(0, 0.23)
+    ax.text(0.5, 0.205,
+            "Sugar & Spike: hitting ABOVE the season average.\n"
+            "Volley These Balls: normal — only 0.021 below.\n"
+            "A genuine collapse would fall far below the line.",
+            ha="center", va="center", fontsize=9,
+            bbox=dict(boxstyle="round,pad=0.5", facecolor="#f4f4f4",
+                      edgecolor="#cccccc"))
+    ax.set_title("Bean's two worst losses weren't collapses\n"
+                 "Team hitting held its season form in both")
+    cs.save(fig, "blowout_autopsy",
+            "Source: findings_blowouts.json — Bean's team hit % in each loss "
+            "vs the season average. A genuine collapse would fall far below the line.")
+
+
 def main() -> None:
     cs.apply_style()
     layer1 = load_json("findings_layer1.json")
     playoff = load_json("findings_playoff.json")
+    blowouts = load_json("findings_blowouts.json")
     games = pd.read_csv(PROCESSED / "bean_machine_games.csv")
 
     chart_allen_story(layer1, playoff)
     chart_defense_vs_offense(layer1)
     chart_playoff_peak(playoff)
     chart_paradox_0107(games)
-    for name in ("allen_story", "defense_vs_offense", "playoff_peak", "paradox_0107"):
+    chart_blowout_autopsy(blowouts)
+    for name in ("allen_story", "defense_vs_offense", "playoff_peak",
+                 "paradox_0107", "blowout_autopsy"):
         print(f"WROTE charts/{name}.png")
 
 

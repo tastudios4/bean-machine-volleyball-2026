@@ -129,11 +129,11 @@ was a collapse.
 
 ## Phase 3 — charts (DONE)
 
-8 charts in `charts/`, built by 3 scripts (`20_charts_league.py`,
+9 charts in `charts/`, built by 3 scripts (`20_charts_league.py`,
 `21_charts_team.py`, `22_charts_game3.py`) sharing `src/chart_style.py`:
 
 - `pythagorean_luck.png` · `silver_vs_gold.png`
-- `allen_story.png` · `defense_vs_offense.png` · `playoff_peak.png` · `paradox_0107.png`
+- `allen_story.png` · `defense_vs_offense.png` · `playoff_peak.png` · `paradox_0107.png` · `blowout_autopsy.png`
 - `game3_coinflip.png` · `game3_margins.png`
 
 Charts read the Phase 2 `findings_*.json` (plus a couple of CSVs for raw
