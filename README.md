@@ -48,6 +48,39 @@ things in the data (see [Game 3 is a coin flip](#3-game-3-is-a-coin-flip)).
 
 ---
 
+## The roster
+
+Bean Machine ran a tight seven-player rotation all season — no deep bench;
+everyone played nearly every set available to them. Roles below are derived from
+the stats, not from the position field (which changed game to game).
+
+| Player | Role | The numbers |
+|---|---|---|
+| **Zane** | Setter | Ran the offense — 138 assists, 74% of the team's total — and was the best server (30% of team aces) |
+| **Jeremy** | Outside hitter | Co-leading scorer — 58 kills, +.222 hit% |
+| **Andy** | Outside hitter | Co-leading scorer — 57 kills, +.203 hit%; a near-perfect mirror of Jeremy |
+| **Cole** | Utility / defensive anchor | Team-high 61 digs; played seven different positions across the season |
+| **Cade** | Middle / backup setter | The hybrid — 34 assists *and* 59 digs |
+| **Allen** | Opposite hitter | High-usage attacker — 25 kills, but a team-high 32 errors (−.062 season hit%) |
+| **Tae** | Middle blocker | Played all 20 of his sets; missed the playoffs with an injury |
+
+Jeremy and Andy were a genuinely balanced two-headed attack — 58 and 57 kills,
++.222 and +.203 efficiency, accounting for over half the team's offense between
+them. Zane ran everything from the setter spot.
+
+**The Cole story.** Cole was the team's Swiss army knife. Over 26 sets he lined
+up at libero, all three outside-hitter spots, *and* all three middle spots —
+seven distinct positions, far more than anyone else. He anchored the defense with
+a team-high 61 digs. And when Tae went down injured before the playoffs, Cole
+moved permanently to the middle for the championship run — covering a position
+that wasn't his, and taking a personal hit for it: his hitting efficiency dropped
+from +.229 in the regular season to +.045 in the playoffs as he adjusted. The
+team won Silver anyway. (One soft signal, too small to lean on: across the
+regular season our best set margins came with Cole at libero — but with only six
+sets there, it's a question, not a conclusion.)
+
+---
+
 ## The data — and why it was the hard part
 
 The analysis is only as good as the data under it, and the data started rough.
