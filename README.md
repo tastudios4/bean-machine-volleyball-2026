@@ -165,16 +165,15 @@ exactly what our play deserved. (Chart at the top of this doc.)
 
 I wanted to compare offense and defense head to head, but the data only honestly
 supports half of that. Hitting efficiency cleanly separated our sets: we hit
-+.197 in the sets we won versus +.049 in the sets we lost, a large effect
-(Cohen's d = +0.98).
++.197 in the sets we won vs. +.049 in the sets we lost.
 
 Defense is harder to pin down honestly. The obvious stat, opponent points per
-set, is nearly tautological: if you lose a set the opponent reached the cap by
+set, is nearly redundant: if you lose a set the opponent reached the cap by
 definition, so the loss produces the high number rather than the other way
-around. The non-tautological defense proxies I do have, digs and blocks, barely
+around. The non-redundant defense proxies I do have (digs and blocks) barely
 move between wins and losses, and digs even runs the wrong way (losing a set
 means more time spent on defense). So the honest finding is that this
-self-tracked data measures our attack well and our defense poorly, and the one
+self-tracked data measures our attack well and our defense not as well, and the one
 thing that clearly decided sets was how well we hit.
 
 ![What separated our wins from losses](charts/win_loss_factors.png)
